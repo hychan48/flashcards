@@ -3,11 +3,16 @@
   <v-row dense>
 
 
-  <info-card
+<!--  <info-card-->
+<!--    :value="json[0]"-->
+<!--  />-->
 
-    :value="json[0]"
+    <info-card
+      v-for="row in json"
+      :key="row.i"
+      :value="row"
 
-  />
+    />
   </v-row>
 <!--  <pre>{{json}}</pre>-->
 </v-container>
