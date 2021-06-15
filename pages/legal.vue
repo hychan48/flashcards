@@ -19,7 +19,10 @@
         </v-card-title>
         <v-card-text>
       <pre>Quick and dirty flashcards implementation
-https://github.com/hychan48/flashcards
+<a
+  href="https://github.com/hychan48/flashcards"
+  target="_blank"
+>https://github.com/hychan48/flashcards</a>
 
 AGPL-3.0 License
 Extending licence and credits
