@@ -31,10 +31,11 @@ export default {
     },
   },
   methods:{
-    ...mapMutations(['setPageTitle'])
+    ...mapMutations(['setPageTitle','setDefaultPageTitle'])
   },
   //maybe make this a mixin?
   head() {
+    // alert('head is called')
     const pageTitle = 'Cardio'
     this.setPageTitle(pageTitle);
 
@@ -42,5 +43,8 @@ export default {
       title: pageTitle
     }
   },
+  beforeDestroy() {
+    this.setDefaultPageTitle();
+  }
 }
 </script>
