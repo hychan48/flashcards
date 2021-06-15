@@ -5,14 +5,30 @@
 
 <!--  <info-card-->
 <!--    :value="json[0]"-->
-<!--  />-->
+    <!--  />-->
     <!--    <pre>{{graphItems}}</pre>-->
     <info-card
+      v-if="1===12"
       v-for="row in json"
       :key="row.i"
       :value="row"
 
     />
+
+    <!--    can be lazy and just use expansion bar...-->
+    <!--    let's try the index thing-->
+    <!--    <h1>sup</h1>-->
+    <div
+      v-for="section,i in graphItems"
+      :id="i"
+      :key="section.chartTitle"
+    >
+      <div class="text-h1">{{ section.chartTitle }}</div>
+      <pre>{{ section.aOut }}</pre>
+      <!--      {{section}}-->
+    </div>
+
+
   </v-row>
 <!--  <pre>{{json}}</pre>-->
 </v-container>
