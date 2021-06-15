@@ -117,7 +117,11 @@ export default {
       return this.$props.value.notes;
     },
     url(){
-      return this.$props.value.url;
+      console.log(this.$props.value);
+      console.log(this.value);
+      // debugger
+      // return '';
+      return this.$props.value.imgURLs[0];
     },
   }
 }

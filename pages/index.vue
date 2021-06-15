@@ -6,6 +6,7 @@
 <!--  <info-card-->
 <!--    :value="json[0]"-->
 <!--  />-->
+    <!--    <pre>{{graphItems}}</pre>-->
     <info-card
       v-for="row in json"
       :key="row.i"
@@ -19,7 +20,7 @@
 <script>
 
 //json generated from another project
-import data from "static/flashcards/dv1_manual.json"
+import graphItems from "static/flashcards/gen/graphItems.json"
 import {mapMutations} from "vuex";
 
 export default {
@@ -28,7 +29,11 @@ export default {
   computed: {
     // ...mapGetters(["pageTitle"]),
     json() {
-      return data;
+      // return data;
+      return this.graphItems[0].aOut
+    },
+    graphItems() {
+      return graphItems;
     },
   },
   methods:{
