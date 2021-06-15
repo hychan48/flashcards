@@ -113,6 +113,11 @@ export const scrollingMixin = {
 export default {
   name: 'indexPage',
   mixins: [styleMixin, scrollingMixin],
+  data() {
+    return {
+      multiples: []
+    }
+  },
   computed: {
     // ...mapGetters(["pageTitle"]),
     json() {
@@ -123,8 +128,12 @@ export default {
       return graphItems;
     },
   },
-  methods:{
-    ...mapMutations(['setPageTitle','setDefaultPageTitle'])
+  methods: {
+    ...mapMutations(['setPageTitle', 'setDefaultPageTitle']),
+    expandAll() {
+
+    },
+
   },
   //maybe make this a mixin?
   head() {

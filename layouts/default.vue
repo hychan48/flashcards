@@ -103,7 +103,7 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Learn',
+          title: 'Flashcard Graphs',
           to: '/'
         },
         // {
