@@ -1,6 +1,15 @@
 <template>
 <v-container fluid>
-  <pre>{{json}}</pre>
+  <v-row dense>
+
+
+  <info-card
+
+    :value="json[0]"
+
+  />
+  </v-row>
+<!--  <pre>{{json}}</pre>-->
 </v-container>
 </template>
 <script>
@@ -12,7 +21,7 @@ export default {
   computed: {
     json() {
       return data;
-    }
+    },
   },
 }
 </script>

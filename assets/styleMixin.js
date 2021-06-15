@@ -1,17 +1,6 @@
-<template>
-
-<v-row>
-  <info-card :height="height" :show="show"/>
-</v-row>
-</template>
-
-<script>
-
-
-export default {
-  name: "practice",
+export const styleMixin = {
   computed: {
-    height() {
+    breakpointHeight() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           // return 220
@@ -27,11 +16,5 @@ export default {
       }
     },
   },
-  data() {
-    return {
-      show: false
-    }
-  },
 }
-</script>
-
+export default styleMixin;
