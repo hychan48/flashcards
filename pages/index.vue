@@ -19,7 +19,7 @@
 <script>
 
 import data from "static/flashcards/dv1_manual.json"
-import {mapGetters,mapMutations} from "vuex";
+import {mapMutations} from "vuex";
 
 export default {
   name:'indexPage',
@@ -36,7 +36,7 @@ export default {
   //maybe make this a mixin?
   head() {
     // alert('head is called')
-    const pageTitle = 'Cardio'
+    const pageTitle = 'Cardiovascular Physiology Graphs';
     this.setPageTitle(pageTitle);
 
     return {

@@ -103,16 +103,16 @@ export default {
           title: 'Learn',
           to: '/'
         },
-        {
-          icon: 'mdi-apps',
-          title: 'Practice Title',
-          to: '/practice'
-        },
-        {
-          icon: 'mdi-apps',
-          title: 'Practice Image',
-          to: '/?1234'
-        },
+        // {
+        //   icon: 'mdi-apps',
+        //   title: 'Practice Title',
+        //   to: '/practice'
+        // },
+        // {
+        //   icon: 'mdi-apps',
+        //   title: 'Practice Image',
+        //   to: '/?1234'
+        // },
         {
           icon: 'mdi-chart-bubble',
           title: 'Legal',
