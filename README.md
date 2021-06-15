@@ -29,3 +29,13 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+# Yarn Audit Fix
+```bash
+# https://www.npmjs.com/package/yarn-audit-fix
+yarn add yarn-audit-fix -D
+
+yarn-audit-fix
+#var yarnAuditFix = require("yarn-audit-fix")
+
+```
