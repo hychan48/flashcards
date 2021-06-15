@@ -58,8 +58,10 @@
       </v-btn>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <nuxt />
+      <v-container
+
+      >
+        <nuxt/>
       </v-container>
     </v-main>
     <v-navigation-drawer
@@ -92,6 +94,7 @@
 import {mapGetters} from "vuex";
 
 export default {
+  // mixins:[scrollingMixin],
   data () {
     return {
       clipped: false,
