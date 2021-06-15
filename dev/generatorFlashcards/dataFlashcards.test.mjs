@@ -46,6 +46,7 @@ describe('Datasets', function(){
       "Pacemaker action potential", "Ventricular myocyte action\n  potential", "Pulmonary vascular\n  resistance",
       "Venous return and cardiac\n  output curves", "Cardiac output\n  thermodilution"
     ];
+    texts.shift()
     const imgURls = ["https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image001.jpg", "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image002.jpg", "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image003.jpg", "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image004.jpg", "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image005.jpg", "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image006.jpg", "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image007.jpg", "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image008.jpg", "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image009.jpg", "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image010.jpg", "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image011.jpg"]
 
     const aOut = [];
@@ -54,6 +55,8 @@ describe('Datasets', function(){
       const imgURL = imgURls[i];
 
       const tmp = {
+        title:text,
+        url:imgURL
 
       };
       aOut.push(tmp);
@@ -61,9 +64,9 @@ describe('Datasets', function(){
 
     const jsonOut = JSON.stringify(aOut,null,2);
     // const jsonOut = JSON.stringify(aOut,null,2);
-    fs.writeFileSync("static/flashcards/dv1.json",jsonOut);
+    fs.writeFileSync("static/flashcards/gen/dv1.json",jsonOut);
 
-    assert.strictEqual(1,2)
+    // assert.strictEqual(1,2)
 
 
 
