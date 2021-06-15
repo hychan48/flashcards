@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: "flashcard",
+  name: "flashcard_two",
   computed: {
     cardItems() {
       const tmp = [  { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },

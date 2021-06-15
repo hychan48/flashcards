@@ -98,7 +98,17 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Learn',
+          to: '/'
+        },
+        {
+          icon: 'mdi-apps',
+          title: 'Practice Title',
+          to: '/'
+        },
+        {
+          icon: 'mdi-apps',
+          title: 'Practice Image',
           to: '/'
         },
         {

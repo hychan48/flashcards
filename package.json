@@ -23,5 +23,6 @@
   "_moduleAliases": {
     "@":".",
     "~":"."
+  ,"type": "module"
   }
 }
