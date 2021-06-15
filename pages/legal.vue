@@ -23,6 +23,10 @@
   href="https://github.com/hychan48/flashcards"
   target="_blank"
 >https://github.com/hychan48/flashcards</a>
+<a
+  href="https://hychan48.github.io/flashcards/"
+  target="_blank"
+>https://hychan48.github.io/flashcards/</a>
 
 AGPL-3.0 License
 Extending licence and credits

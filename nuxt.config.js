@@ -4,6 +4,17 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  /**
+   * for github pages
+   * https://nuxtjs.org/docs/2.x/deployment/github-pages/
+   * npm run generate; npm run deploy
+   *
+    */
+
+  router: {
+    base: '/flashcards'
+  },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
