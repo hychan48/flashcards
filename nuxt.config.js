@@ -71,5 +71,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    //https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-build#devmiddleware
+
   }
 }
