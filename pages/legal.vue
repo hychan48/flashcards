@@ -22,24 +22,24 @@
 https://github.com/hychan48/flashcards
 
 AGPL-3.0 License
-Extending licence from
-
+Extending licence and credits
 <a
   href="https://ketaminenightmares.com/admin/legal.html"
   target="_blank"
->
-https://ketaminenightmares.com/admin/legal.html</a>
-
-
+>https://ketaminenightmares.com/admin/legal.html</a>
 
 Initial content is for studying for
-https://ketaminenightmares.com/
+<a
+  href="https://ketaminenightmares.com/"
+  target="_blank"
+>https://ketaminenightmares.com/</a>
 
 Primarily
-https://ketaminenightmares.com/pex/other/memorisation_material/
+<a
+  href="https://ketaminenightmares.com/pex/other/memorisation_material/"
+  target="_blank"
+>https://ketaminenightmares.com/pex/other/memorisation_material/</a>
 
-Credits to author
-https://ketaminenightmares.com/admin/legal.html
 
 Good luck studying
       </pre>
