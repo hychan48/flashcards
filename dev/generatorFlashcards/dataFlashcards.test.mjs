@@ -23,6 +23,11 @@ this.timeout(500);//500ms
 
 /**
  * Generate dataset into static in json form
+
+
+ $$('span').map(val => val.textContent).filter(val => /\w+/g.test(val))
+
+ $$('img').map(val => val.src)
  */
 describe('Datasets', function(){
   it('Generate dataset Image', function(){
