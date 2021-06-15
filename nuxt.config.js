@@ -12,7 +12,7 @@ export default {
     */
 
   router: {
-    base: '/flashcards'
+    base: '/flashcards/'
   },
 
   // Target: https://go.nuxtjs.dev/config-target
