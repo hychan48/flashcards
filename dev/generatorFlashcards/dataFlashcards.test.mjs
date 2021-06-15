@@ -55,6 +55,8 @@ describe('Datasets', function(){
       const imgURL = imgURls[i];
 
       const tmp = {
+        i,
+        index:i+1,
         title:text,
         url:imgURL
 
