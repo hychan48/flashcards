@@ -104,12 +104,12 @@ export default {
         {
           icon: 'mdi-apps',
           title: 'Practice Title',
-          to: '/'
+          to: '/practice'
         },
         {
           icon: 'mdi-apps',
           title: 'Practice Image',
-          to: '/'
+          to: '/?1234'
         },
         {
           icon: 'mdi-chart-bubble',
