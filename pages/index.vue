@@ -1,33 +1,54 @@
 <template>
-<v-row>
-  <v-col notes="Flashcards">
-  <v-card
-      hover
+<v-container fluid>
+  <v-row dense>
+    <v-col
+      v-for="card in cardItems"
+      :key="card.title"
+      :cols="card.flex"
     >
-
-      <v-card-title notes="Flashcards"
-
-      >
-        <v-icon
-          left
+      <v-card>
+        <v-img
+          :src="card.src"
+          class="white--text align-end"
+          gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+          height="200px"
         >
-          mdi-bell-ring
-        </v-icon>
-        <span class="title font-weight-light">
-          Flashcards
-        </span>
-      </v-card-title>
-      <v-card-text>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </v-card-text>
-    </v-card>
-  </v-col>
-</v-row>
+          <v-card-title v-text="card.title"></v-card-title>
+        </v-img>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+
+          <v-btn icon>
+            <v-icon>mdi-heart</v-icon>
+          </v-btn>
+
+          <v-btn icon>
+            <v-icon>mdi-bookmark</v-icon>
+          </v-btn>
+
+          <v-btn icon>
+            <v-icon>mdi-share-variant</v-icon>
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-col>
+  </v-row>
+</v-container>
 </template>
 <script>
 
 export default {
   name:'indexPage',
+  data() {
+    return {
+      cardItems: [
+        { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
+        { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
+        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
+      ],
+    }
+  },
   components: {
 
   }
