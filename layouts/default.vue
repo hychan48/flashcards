@@ -48,7 +48,7 @@
       >
         <v-icon>mdi-minus</v-icon>
       </v-btn>
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title>{{title}}</v-toolbar-title>
       <v-spacer />
       <v-btn
         icon
@@ -120,8 +120,16 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Flashcards'
+      // title: 'Flashcards',
+    };
+  },
+  computed: {
+    title() {
+      // alert(JSON.stringify(Object.keys(this.$options)))
+      // alert(this.$query)
+      return 'arg';//think this needs to be dynamic or something
+      // return this.head.title;
     }
-  }
+  },
 }
 </script>

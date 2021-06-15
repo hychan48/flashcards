@@ -1,12 +1,11 @@
 <template>
 <v-container fluid>
-  <v-row dense>
+  <v-row>
 
 
 <!--  <info-card-->
 <!--    :value="json[0]"-->
 <!--  />-->
-
     <info-card
       v-for="row in json"
       :key="row.i"
@@ -27,6 +26,11 @@ export default {
     json() {
       return data;
     },
+  },
+  head() {
+    return {
+      title: 'sup'
+    }
   },
 }
 </script>

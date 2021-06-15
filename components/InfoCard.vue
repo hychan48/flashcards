@@ -3,6 +3,23 @@
 
          cols="auto"
 
+         xl="8"
+         offset-xl="2"
+
+         lg="8"
+         offset-lg="2"
+
+         md="8"
+         offset-md="2"
+
+         sm="12"
+         offset-sm="0"
+
+         xs="12"
+         offset-xs="0"
+
+
+
 
   >
     <v-card
