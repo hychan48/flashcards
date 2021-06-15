@@ -21,18 +21,19 @@
     "i": 3,
     "index": 4,
     "title": "Wigger’s diagramme",
+    "notes": "Note the LV and aortic pressure waveforms are\n  frequently drawn incorrectly.",
     "url": "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image004.jpg"
   },
   {
     "i": 4,
     "index": 5,
-    "title": "Note the LV and aortic pressure waveforms are\n  frequently drawn incorrectly.",
-    "url": "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image005.jpg"
+    "url": "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image005.jpg",
+    "title": "Pacemaker action potential"
   },
   {
     "i": 5,
     "index": 6,
-    "title": "Pacemaker action potential",
+    "title": "Ventricular myocyte action\n  potential",
     "url": "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image006.jpg"
   },
   {
@@ -56,7 +57,13 @@
   {
     "i": 9,
     "index": 10,
-    "title": "Cardiac output\n  thermodilution",
+    "title": "Venous return and cardiac\n  output curves",
     "url": "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image010.jpg"
+  },
+  {
+    "i": 10,
+    "index": 11,
+    "title": "Cardiac output\n  thermodilution",
+    "url": "https://ketaminenightmares.com/pex/other/memorisat…rdiovascular_physiology_graphs_files/image011.jpg"
   }
 ]
