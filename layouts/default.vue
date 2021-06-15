@@ -48,7 +48,7 @@
       >
         <v-icon>mdi-minus</v-icon>
       </v-btn>
-      <v-toolbar-title>{{title}}</v-toolbar-title>
+      <v-toolbar-title>{{pageTitle}}</v-toolbar-title>
       <v-spacer />
       <v-btn
         icon
@@ -89,6 +89,8 @@
 </template>
 
 <script>
+import {mapGetters} from "vuex";
+
 export default {
   data () {
     return {
@@ -124,12 +126,7 @@ export default {
     };
   },
   computed: {
-    title() {
-      // alert(JSON.stringify(Object.keys(this.$options)))
-      // alert(this.$query)
-      return 'arg';//think this needs to be dynamic or something
-      // return this.head.title;
-    }
+      ...mapGetters(['pageTitle']),
   },
 }
 </script>

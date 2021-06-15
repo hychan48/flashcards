@@ -4,18 +4,21 @@
 
 const defaultPageTitle = "Flashcards"
 export const state = () => ({
-  pageTitle:"",
+  pageTitle:defaultPageTitle,
 })
 export const getters = {
   //i can totally just make this.. need to update notes
-  email(state) {
-    return state.email;
+  pageTitle(state) {
+    return state.pageTitle;
   },
 }
 export const mutations = {
 
-  clearPageTitle(state) {
+  setDefaultPageTitle(state) {
     state.pageTitle = defaultPageTitle;
+  },
+  setPageTitle(state,payload) {
+    state.pageTitle = payload;
   },
 
 

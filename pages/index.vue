@@ -19,17 +19,27 @@
 <script>
 
 import data from "static/flashcards/dv1_manual.json"
+import {mapGetters,mapMutations} from "vuex";
+
 export default {
   name:'indexPage',
 
   computed: {
+    // ...mapGetters(["pageTitle"]),
     json() {
       return data;
     },
   },
+  methods:{
+    ...mapMutations(['setPageTitle'])
+  },
+  //maybe make this a mixin?
   head() {
+    const pageTitle = 'Cardio'
+    this.setPageTitle(pageTitle);
+
     return {
-      title: 'sup'
+      title: pageTitle
     }
   },
 }
