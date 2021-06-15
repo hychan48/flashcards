@@ -52,6 +52,11 @@
                 contain
                 width="auto"
               />
+
+              <v-card-subtitle v-if="item.notes">
+                {{ item.notes }}
+              </v-card-subtitle>
+
             </v-card>
 
           </v-expansion-panel-content>
