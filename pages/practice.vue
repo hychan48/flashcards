@@ -1,26 +1,62 @@
 <template>
 
 <v-row>
-<v-col notes="Practice Title">
-<v-card
-    hover
+<v-col notes="Practice Title"
+
+       cols="auto"
+
+
+>
+  <v-card
+    class="mx-auto"
+    smax-width="300"
+
   >
-  
-    <v-card-title notes="Practice Title"
+    <v-img
+      ssrc="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+      src="https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image001.jpg"
+      :max-height="height"
+      width="auto"
+      contain
+    ></v-img>
+
+    <v-card-title
 
     >
-      <v-icon
-        left
-      >
-        mdi-bell-ring
-      </v-icon>
-      <span class="title font-weight-light">
-        Practice Title
-      </span>
+      Top western road trips
     </v-card-title>
-    <v-card-text>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </v-card-text>
+
+    <v-card-subtitle>
+      1,000 miles of wonder {{height}}
+    </v-card-subtitle>
+
+    <v-card-actions>
+      <v-btn
+        color="orange lighten-2"
+        text
+      >
+        Explore
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        icon
+        @click="show = !show"
+      >
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+
+        <v-card-text>
+          I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+        </v-card-text>
+      </div>
+    </v-expand-transition>
   </v-card>
 </v-col>
 </v-row>
@@ -28,7 +64,29 @@
 
 <script>
 export default {
-  name: "practice"
+  name: "practice",
+  computed: {
+    height() {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs':
+          // return 220
+          return null
+        case 'sm':
+          return 400
+        case 'md':
+          return 500
+        case 'lg':
+          return 600
+        case 'xl':
+          return 800
+      }
+    },
+  },
+  data() {
+    return {
+      show: false
+    }
+  },
 }
 </script>
 
