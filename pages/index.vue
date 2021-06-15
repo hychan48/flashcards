@@ -18,6 +18,7 @@
 </template>
 <script>
 
+//json generated from another project
 import data from "static/flashcards/dv1_manual.json"
 import {mapMutations} from "vuex";
 

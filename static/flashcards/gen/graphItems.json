@@ -1,0 +1,539 @@
+[
+  {
+    "chartTitle": "Cardiovascular Physiology Graphs",
+    "aOut": [
+      {
+        "title": "Aortic vs radial waveform",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image001.jpg"
+        ]
+      },
+      {
+        "title": "Coronary blood flow",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image002.jpg"
+        ]
+      },
+      {
+        "title": "LV pressure-volume loop",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image003.jpg"
+        ]
+      },
+      {
+        "title": "Wigger’s diagramme",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image004.jpg"
+        ],
+        "notes": "Note the LV and aortic pressure waveforms are\n  frequently drawn incorrectly."
+      },
+      {
+        "title": "Pacemaker action potential",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image005.jpg"
+        ]
+      },
+      {
+        "title": "Ventricular myocyte action\n  potential",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image006.jpg",
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image007.jpg"
+        ]
+      },
+      {
+        "title": "Pulmonary vascular\n  resistance",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image008.jpg"
+        ]
+      },
+      {
+        "title": "Venous return and cardiac\n  output curves",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image009.jpg",
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image010.jpg"
+        ]
+      },
+      {
+        "title": "Cardiac output\n  thermodilution",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs_files/image011.jpg"
+        ]
+      }
+    ],
+    "url": "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/cardiovascular_physiology_graphs.htm"
+  },
+  {
+    "chartTitle": "Respiratory Physiology Graphs",
+    "aOut": [
+      {
+        "title": "Airway resistance vs\n  generation",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image001.jpg"
+        ]
+      },
+      {
+        "title": "Airway resistance vs lung\n  volume",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image002.jpg"
+        ]
+      },
+      {
+        "title": "PVR vs lung volume",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image003.jpg"
+        ]
+      },
+      {
+        "title": "Anatomical deadspace",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image004.jpg"
+        ]
+      },
+      {
+        "title": "Nitrogen washout ",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image005.jpg"
+        ]
+      },
+      {
+        "title": "Respiratory system\n  compliance",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image006.jpg"
+        ]
+      },
+      {
+        "title": "Lung compliance: static vs\n  dynamic",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image007.jpg",
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image008.jpg"
+        ]
+      },
+      {
+        "title": "Lung compliance: normal and\n  low lung volume",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image009.jpg",
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image010.jpg"
+        ],
+        "notes": " "
+      },
+      {
+        "title": "Pressure volume loops:\n  inspiration and expiration",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image011.jpg",
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image012.jpg"
+        ]
+      },
+      {
+        "title": "Flow volume loops",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image013.jpg"
+        ]
+      },
+      {
+        "title": "Pressure volume loop:\n  obstruction",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image014.jpg"
+        ]
+      },
+      {
+        "title": "Flow-volume loops",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image015.jpg"
+        ]
+      },
+      {
+        "title": "Closing capacity vs age",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image016.jpg"
+        ]
+      },
+      {
+        "title": "Blood gas content",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image017.jpg"
+        ]
+      },
+      {
+        "title": "Diffusion limitation vs\n  perfusion limitation of gas exchange",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image018.jpg"
+        ]
+      },
+      {
+        "title": "Hypoxic pulmonary\n  vasoconstriction",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image019.jpg"
+        ]
+      },
+      {
+        "title": "Isoshunt diagramme",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image020.jpg"
+        ]
+      },
+      {
+        "title": "Hypoventilation and oxygen\n  supplementation",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image021.jpg"
+        ]
+      },
+      {
+        "title": "Ventilation vs O2",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image022.jpg",
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image023.jpg",
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image024.jpg"
+        ]
+      },
+      {
+        "title": "Ventilation vs CO2",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image025.jpg"
+        ],
+        "notes": " "
+      },
+      {
+        "title": "Peripheral chemoreceptor\n  activity",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image026.jpg"
+        ]
+      },
+      {
+        "title": "OHDC",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image027.jpg",
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image028.jpg"
+        ]
+      },
+      {
+        "title": "Oxygen cascade",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image029.jpg"
+        ]
+      },
+      {
+        "title": "V/Q matching",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology_files/image030.jpg"
+        ]
+      }
+    ],
+    "url": "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/respiratory_physiology.htm"
+  },
+  {
+    "chartTitle": "Obstetric physiology graphs",
+    "aOut": [
+      {
+        "title": "Heart rate",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology_files/image001.jpg"
+        ]
+      },
+      {
+        "title": "Stroke volume",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology_files/image002.jpg"
+        ]
+      },
+      {
+        "title": "Cardiac output",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology_files/image003.jpg"
+        ]
+      },
+      {
+        "title": "SVR",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology_files/image004.jpg"
+        ]
+      },
+      {
+        "title": "Blood pressure",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology_files/image005.jpg"
+        ]
+      },
+      {
+        "title": "Renal blood flow",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology_files/image006.jpg"
+        ]
+      },
+      {
+        "title": "Blood volume",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology_files/image007.jpg"
+        ]
+      },
+      {
+        "title": "Cardiac output in labour",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology_files/image008.jpg"
+        ]
+      },
+      {
+        "title": "Double Bohr effect",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology_files/image009.jpg"
+        ]
+      },
+      {
+        "title": "Double Haldane effect",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology_files/image010.jpg"
+        ],
+        "notes": "(these values are currently in dispute)"
+      }
+    ],
+    "url": "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/obstetric_physiology.htm"
+  },
+  {
+    "chartTitle": "Neurophysiology and neuropharmacology",
+    "aOut": [
+      {
+        "title": "CBF vs CMRO2",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/neurophysiology_and_neuropharmacology_files/image001.jpg"
+        ]
+      },
+      {
+        "title": "CMRO2 vs isoflurane",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/neurophysiology_and_neuropharmacology_files/image002.jpg"
+        ]
+      },
+      {
+        "title": "CMRO2 vs temperature",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/neurophysiology_and_neuropharmacology_files/image003.jpg"
+        ]
+      },
+      {
+        "title": "CBF vs isoflurane",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/neurophysiology_and_neuropharmacology_files/image004.jpg"
+        ]
+      },
+      {
+        "title": "CBF vs mAP, PaO2 PaCO2",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/neurophysiology_and_neuropharmacology_files/image005.jpg"
+        ]
+      },
+      {
+        "title": "Intracranial elastance",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/neurophysiology_and_neuropharmacology_files/image006.jpg"
+        ]
+      },
+      {
+        "title": "CSF flux",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/neurophysiology_and_neuropharmacology_files/image007.jpg"
+        ]
+      }
+    ],
+    "url": "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/neurophysiology_and_neuropharmacology.htm"
+  },
+  {
+    "chartTitle": "General Pharmacology Graphs",
+    "aOut": [
+      {
+        "title": "Natural exponential\n  function",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image001.jpg"
+        ]
+      },
+      {
+        "title": "Exponential decay curve",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image002.jpg",
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image003.jpg"
+        ]
+      },
+      {
+        "title": "Runaway curve",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image004.jpg"
+        ]
+      },
+      {
+        "title": "Log concentration response\n  curve",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image005.jpg"
+        ]
+      },
+      {
+        "title": "Competitive antagonist",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image006.jpg"
+        ]
+      },
+      {
+        "title": "Non-competitive antagonist",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image007.jpg"
+        ]
+      },
+      {
+        "title": "Intrinsic activity /\n  partial agonist",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image008.jpg"
+        ]
+      },
+      {
+        "title": "Potency",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image009.jpg"
+        ]
+      },
+      {
+        "title": "Therapeutic index",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image010.jpg"
+        ]
+      },
+      {
+        "title": "Tri-exponential decay curve",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image011.jpg"
+        ]
+      },
+      {
+        "title": "Biophasics",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image012.jpg"
+        ]
+      },
+      {
+        "title": "Clearance",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image013.jpg"
+        ]
+      },
+      {
+        "title": "Half life vs time constant",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image014.jpg"
+        ]
+      },
+      {
+        "title": "Isobologramme",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs_files/image015.jpg"
+        ]
+      }
+    ],
+    "url": "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/general_pharmacology_graphs.htm"
+  },
+  {
+    "chartTitle": "Miscellaneous Pharmacology Graphs",
+    "aOut": [
+      {
+        "title": "FAFI",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/miscellaneous_pharmacology_files/image001.jpg"
+        ]
+      },
+      {
+        "title": "MAC and its variants",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/miscellaneous_pharmacology_files/image002.jpg"
+        ]
+      },
+      {
+        "title": "ED95\n  non-depolarising relaxant",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/miscellaneous_pharmacology_files/image003.jpg"
+        ]
+      },
+      {
+        "title": "Larynx vs adductor pollicis",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/miscellaneous_pharmacology_files/image004.jpg"
+        ]
+      }
+    ],
+    "url": "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/miscellaneous_pharmacology.htm"
+  },
+  {
+    "chartTitle": "Equipment pictures",
+    "aOut": [
+      {
+        "title": "Scavenging",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image001.jpg"
+        ]
+      },
+      {
+        "title": "Clark electrode",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image002.jpg"
+        ]
+      },
+      {
+        "title": "Fuel cell",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image003.jpg"
+        ]
+      },
+      {
+        "title": "pH electrode",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image004.jpg"
+        ]
+      },
+      {
+        "title": "Paramagnetic analyser",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image005.jpg"
+        ]
+      },
+      {
+        "title": "Damping",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image006.jpg",
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image007.jpg"
+        ]
+      },
+      {
+        "title": "Infrared analyser",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image008.jpg"
+        ]
+      },
+      {
+        "title": "Oscillometric NIBP",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image009.jpg"
+        ]
+      },
+      {
+        "title": "Tec 5 vapouriser",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image010.jpg"
+        ]
+      },
+      {
+        "title": "Tec 6 vapouriser",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image011.jpg"
+        ]
+      },
+      {
+        "title": "Vacuum-insulated evaporator",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image012.jpg"
+        ]
+      },
+      {
+        "title": "Pressure controlled vs\n  volume-controlled ventilation",
+        "imgURLs": [
+          "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures_files/image013.jpg"
+        ],
+        "notes": "(can’t recall the source)"
+      }
+    ],
+    "url": "https://ketaminenightmares.com/pex/other/memorisation_material/graphs/equipment_pictures.htm"
+  }
+]
