@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "cross-env NUXT_ENV_ROUTER_BASE='/flashcards/' nuxt generate",
+    "generate": "cross-env NUXT_ENV_ROUTER_BASE='/flashcards/' NUXT_ENV_BASE_URL='https://hychan48.github.io/' nuxt generate",
     "generate2": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "minify-static": "html-minifier --input-dir ./static/flashcards/gen --output-dir ./static/flashcards/static --collapse-whitespace --continue-on-parse-error --case-sensitive",
