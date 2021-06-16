@@ -1,3 +1,7 @@
+/**
+ * https://vuetifyjs.com/en/features/breakpoints/
+ * @type {{computed: {breakpointHeight(): (null|number)}}}
+ */
 export const styleMixin = {
   computed: {
     breakpointHeight() {
