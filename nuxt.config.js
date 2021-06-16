@@ -1,6 +1,23 @@
 import colors from 'vuetify/es5/util/colors'
 
+
+/**
+ * use .env file later and make a public doc
+ *
+ * NUXT_ENV_BASE_URL
+ * NUXT_ENV_ROUTER_BASE
+ */
+
+const env = {
+  // BASE_URL : process.env.NUXT_BASE_URL || 'http://localhost:3000',//auto-overides but might be useful
+  BASE_URL: 'http://localhost:3000',
+  ROUTER_BASE: '/',
+
+}
+
+
 export default {
+  env,
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -9,10 +26,11 @@ export default {
    * https://nuxtjs.org/docs/2.x/deployment/github-pages/
    * npm run generate; npm run deploy
    *
-    */
+   */
 
   router: {
-    base: '/flashcards/'
+    // base: '/flashcards/',
+    base: env.ROUTER_BASE,
   },
 
   // Target: https://go.nuxtjs.dev/config-target

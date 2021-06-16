@@ -133,13 +133,16 @@ export default {
   },
   //testing better way
   async fetch() {
+    // alert(process.env.BASE_URL)
+    const router = this.$router;
+    debugger
     const oData = await fetch('/flashcards/flashcards/gen/tableItems.json');// todo append the path / baseurl
     // const oData = await fetch('http://localhost:3000/flashcards/flashcards/gen/tableItems.json')
     // const oData = await this.$axios('/static/flashcards/gen/tableItems.json')
     // debugger
-   // alert(JSON.stringify(await oData.json()))
+    // alert(JSON.stringify(await oData.json()))
     this.$options.graphItems = await oData.json();
-    console.log("graphItems",this.$options.graphItems);
+    console.log("graphItems", this.$options.graphItems);
   },
   computed: {
     // ...mapGetters(["pageTitle"]),
