@@ -61,7 +61,10 @@
       <v-container
 
       >
+        <!--        <keep-alive>-->
         <nuxt/>
+        <!--        </keep-alive>-->
+
       </v-container>
     </v-main>
     <v-navigation-drawer

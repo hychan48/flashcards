@@ -8,6 +8,7 @@
     dev-notes="vue stuff dont work"
     >notes
   </div>
+<!--  Pending: {{this.$fetchState.pending}}-->
   <v-fab-transition>
     <v-btn
       v-show="false"
@@ -103,7 +104,7 @@
 <script>
 import {mapMutations} from "vuex";
 //json generated from another project
-import graphItems from "static/flashcards/gen/graphItems.json"
+// import graphItems from "static/flashcards/gen/graphItems.json"
 import styleMixin from "~/assets/styleMixin";
 
 // https://vuetifyjs.com/en/directives/scroll/#usage
@@ -132,12 +133,14 @@ export default {
     }
   },
   //testing better way
+  graphItems: [],//options
   async fetch() {
     // alert(process.env.BASE_URL)
     // const router = this.$router;
     // debugger
     // const oData = await fetch('/flashcards/flashcards/gen/tableItems.json');// todo append the path / baseurl
     // const oData = await fetch(process.env.baseUrl + 'flashcards/gen/tableItems.json');// todo append the path / baseurl
+    console.log(('fetch options', this.$options.graphItems));
     const oData = await fetch(process.env.baseUrl + 'flashcards/gen/graphItems.json');// todo append the path / baseurl
     // const oData = await fetch('http://localhost:3000/flashcards/flashcards/gen/tableItems.json')
     // const oData = await this.$axios('/static/flashcards/gen/tableItems.json')
@@ -153,13 +156,28 @@ export default {
       return this.graphItems[0].aOut
     },
     graphItems() {
+      //testing this logic for performance
+      this.$fetchState.pending;
+      return this.$options.graphItems;
+      // if(!this.$options.graphItems){
+      //   return this.$options.graphItems;
+      // }else if(!this.$fetchState.pending){
+      //   return this.$options.graphItems;
+      // }else{
+      //   return [];
+      // }
       // return graphItems;
       //best way would be to cache this with a computed
-      if(!this.$fetchState.pending){
-        return this.$options.graphItems;
-      }
+      // if(!this.$fetchState.pending){
+      //
+      // }
+      // if(this.$options.length > 0){
+      //   this.$fetchState.pending;
+      // }
+      // !this.$fetchState.error
+      // return this.$options.graphItems;
 
-      return graphItems;
+      // return graphItems;
     },
   },
   methods: {
