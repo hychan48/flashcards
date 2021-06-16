@@ -44,8 +44,8 @@
 import {mapMutations} from "vuex";
 import styleMixin from "~/assets/styleMixin";
 //json generated from another project
-// import tableItems from "static/flashcards/gen/tableItems.json"
-const tableItems = [];
+import tableItems from "static/flashcards/gen/tableItems.json"
+// const tableItems = [];
 
 // https://vuetifyjs.com/en/directives/scroll/#usage
 export const scrollingMixin = {

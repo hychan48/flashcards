@@ -121,11 +121,11 @@ export default {
         useShortDoctype: true,
         minifyURLs: true,
         removeComments: true,
-        // removeEmptyElements: true
-        get removeEmptyElements() {
-          console.error('html minify')
-          return true;
-        }
+        removeEmptyElements: true
+        // get removeEmptyElements() {
+        //   console.error('html minify')
+        //   return true;
+        // }
       }
     },
     //

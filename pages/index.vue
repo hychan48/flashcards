@@ -141,7 +141,8 @@ export default {
     // const oData = await fetch('/flashcards/flashcards/gen/tableItems.json');// todo append the path / baseurl
     // const oData = await fetch(process.env.baseUrl + 'flashcards/gen/tableItems.json');// todo append the path / baseurl
     console.log(('fetch options', this.$options.graphItems));
-    const oData = await fetch(process.env.baseUrl + 'flashcards/gen/graphItems.json');// todo append the path / baseurl
+    // const oData = await fetch(process.env.baseUrl + 'flashcards/gen/graphItems.json');// todo append the path / baseurl
+    const oData = await fetch(process.env.baseUrl + 'flashcards/static/graphItems.json');// todo append the path / baseurl
     // const oData = await fetch('http://localhost:3000/flashcards/flashcards/gen/tableItems.json')
     // const oData = await this.$axios('/static/flashcards/gen/tableItems.json')
     // debugger
