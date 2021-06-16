@@ -5,17 +5,11 @@
     v-for="tableItem in tableItems"
     :key="tableItem.chartTitle"
   >
-
-
-    <!--  <info-card-->
-    <!--    :value="json[0]"-->
-    <!--  />-->
-    <!--    <pre>{{graphItems}}</pre>-->
     <v-col>
       <div>{{ tableItem.chartTitle }}</div>
       <v-expansion-panels
         focusable
-        multiple
+        multiplesss
 
       >
         <v-expansion-panel
@@ -49,7 +43,6 @@
 <script>
 import {mapMutations} from "vuex";
 //json generated from another project
-import graphItems from "static/flashcards/gen/graphItems.json"
 import tableItems from "static/flashcards/gen/tableItems.json"
 import styleMixin from "~/assets/styleMixin";
 
@@ -75,18 +68,11 @@ export default {
   mixins: [styleMixin, scrollingMixin],
   data() {
     return {
-      multiples: []
+      // multiples: []
     }
   },
   computed: {
-    // ...mapGetters(["pageTitle"]),
-    json() {
-      // return data;
-      return this.graphItems[0].aOut
-    },
-    graphItems() {
-      return graphItems;
-    },
+
     tableItems(){
       return tableItems;
     },
