@@ -9,8 +9,10 @@
     "generate": "cross-env NUXT_ENV_ROUTER_BASE='/flashcards/' nuxt generate",
     "generate2": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "minify-static": "html-minifier --input-dir ./static/flashcards/gen --output-dir ./static/flashcards/static --collapse-whitespace --continue-on-parse-error",
-    "minify-static_dist": "html-minifier --input-dir ./dist/flashcards/gen --output-dir ./dist/test --collapse-whitespace --continue-on-parse-error"
+    "minify-static": "html-minifier --input-dir ./static/flashcards/gen --output-dir ./static/flashcards/static --collapse-whitespace --continue-on-parse-error --case-sensitive",
+    "minify-static_dist_test": "html-minifier --input-dir ./dist/flashcards/gen --output-dir ./dist/test --collapse-whitespace --continue-on-parse-error",
+    "test1": "html-minifier --version",
+    "test": "html-minifier"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",

@@ -1,9 +1,10 @@
 import {createRequire} from 'module';
+const require = createRequire(import.meta.url);
 // const assert = require('assert');
 // const {describe,it} = require('mocha');
 import {describe, it} from 'mocha';
+import assert from 'assert'
 
-const require = createRequire(import.meta.url);
 /*
 //mjs file now? and don't need module-alias? if jsconfig?
 npm install esm --save-dev
@@ -72,5 +73,25 @@ describe('Datasets', function(){
 
 
 
+  });
+});
+
+/**
+ * Static minify validator...
+ */
+describe("Test static html-minifier", function(){
+  it("tableItems.json", function(){
+    const full = JSON.parse(fs.readFileSync("static/flashcards/gen/tableItems.json"));
+    const min = JSON.parse(fs.readFileSync("static/flashcards/static/tableItems.json"));
+    // console.log(full);
+    // console.log(min);
+    // assert.deepStrictEqual(full,min)
+    let i = 0;
+    let j = 0;
+    // assert.strictEqual(full[i].aOut,min[i].aOut)
+    // assert.strictEqual(full[i].aOut[j],min[i].aOut[j])
+    // console.log(typeof full[i].aOut[j]);
+    assert.strictEqual(full[i].aOut[j],min[i].aOut[j])
+    assert.strictEqual(full[i].aOut[j].html,min[i].aOut[j].html)
   });
 });
