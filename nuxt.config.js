@@ -20,8 +20,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    //should check titleTemplate
     titleTemplate: '%s - flashcards',
-    title: '%s',
+    title: 'Flashcards',
     htmlAttrs: {
       lang: 'en'
     },
