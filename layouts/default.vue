@@ -118,6 +118,11 @@ export default {
         // },
         {
           icon: 'mdi-chart-bubble',
+          title: 'Table Items',
+          to: '/tableItemsPage'
+        },
+        {
+          icon: 'mdi-chart-bubble',
           title: 'Legal',
           to: '/legal'
         }
