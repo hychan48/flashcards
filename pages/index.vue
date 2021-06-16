@@ -1,6 +1,13 @@
 <template>
 <v-container fluid
 >
+
+  <div
+    v-show="false"
+    notes="<%=NODE_ENV%>"
+    dev-notes="vue stuff dont work"
+    >notes
+  </div>
   <v-fab-transition>
     <v-btn
       v-show="false"
