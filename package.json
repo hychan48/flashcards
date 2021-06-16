@@ -9,7 +9,7 @@
     "generate": "cross-env NUXT_ENV_ROUTER_BASE='/flashcards/' nuxt generate",
     "generate2": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "minify-static": "html-minifier  --input-dir ./dist/flashcards --output-dir ./dist/test --collapse-whitespace --remove-comments"
+    "minify-static": "html-minifier --input-dir ./dist/flashcards/gen --output-dir ./dist/test --collapse-whitespace --continue-on-parse-error"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
