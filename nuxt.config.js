@@ -73,6 +73,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    // 'html-minifier',//doesnt work
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
