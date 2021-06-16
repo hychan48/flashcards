@@ -27,14 +27,10 @@
           </v-expansion-panel-header>
           <v-expansion-panel-content>
             <v-card
-              v-for="imgURL in item.imgURLs"
-              :key="imgURL"
+
             >
-              <v-img
-                :max-height="breakpointHeight"
-                :src="imgURL"
-                contain
-                width="auto"
+              <table
+                v-html="item.htmlTable"
               />
 
               <v-card-subtitle v-if="item.notes">
@@ -106,7 +102,7 @@ export default {
   head() {
     // alert('head is called')
     // const pageTitle = 'Cardiovascular Physiology Graphs';
-    const pageTitle = 'Graphs';
+    const pageTitle = 'Tables';
     this.setPageTitle(pageTitle);
 
     return {
