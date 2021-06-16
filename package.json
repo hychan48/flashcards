@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "NUXT_ENV_ROUTER_BASE=/flashcards/ nuxt generate",
+    "generate": "cross-env NUXT_ENV_ROUTER_BASE='/flashcards/' nuxt generate",
+    "generate2": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
@@ -17,7 +18,9 @@
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.3",
+    "cross-env": "^7.0.3",
     "esm": "^3.2.25",
+    "html-minifier": "^4.0.0",
     "mocha": "^9.0.0",
     "module-alias": "^2.2.2",
     "push-dir": "^0.4.1",

@@ -107,5 +107,27 @@ export default {
   build: {
     //https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-build#devmiddleware
 
+    /* html.minify */
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+        minifyURLs: true,
+        removeComments: true,
+        // removeEmptyElements: true
+        get removeEmptyElements() {
+          console.error('html minify')
+          return true;
+        }
+      }
+    },
+    //
   }
 }

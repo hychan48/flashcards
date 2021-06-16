@@ -1,9 +1,9 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
+import {createRequire} from 'module';
 // const assert = require('assert');
 // const {describe,it} = require('mocha');
-import assert from 'assert';
-import { describe, it} from 'mocha';
+import {describe, it} from 'mocha';
+
+const require = createRequire(import.meta.url);
 /*
 //mjs file now? and don't need module-alias? if jsconfig?
 npm install esm --save-dev
@@ -66,7 +66,7 @@ describe('Datasets', function(){
 
     const jsonOut = JSON.stringify(aOut,null,2);
     // const jsonOut = JSON.stringify(aOut,null,2);
-    fs.writeFileSync("static/flashcards/gen/dv1.json",jsonOut);
+    fs.writeFileSync("static/flashcards/gen/dv1.js", jsonOut);
 
     // assert.strictEqual(1,2)
 

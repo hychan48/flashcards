@@ -42,9 +42,10 @@
 </template>
 <script>
 import {mapMutations} from "vuex";
-//json generated from another project
-import tableItems from "static/flashcards/gen/tableItems.json"
 import styleMixin from "~/assets/styleMixin";
+//json generated from another project
+// import tableItems from "static/flashcards/gen/tableItems.json"
+const tableItems = [];
 
 // https://vuetifyjs.com/en/directives/scroll/#usage
 export const scrollingMixin = {
@@ -66,6 +67,7 @@ export const scrollingMixin = {
 export default {
   name: 'tableItemsPage',
   mixins: [styleMixin, scrollingMixin],
+  tableItems,
   data() {
     return {
       // multiples: []
@@ -73,8 +75,8 @@ export default {
   },
   computed: {
 
-    tableItems(){
-      return tableItems;
+    tableItems() {
+      return this.$options.tableItems;
     },
   },
   methods: {
