@@ -137,7 +137,9 @@ export default {
     // const oData = await fetch('http://localhost:3000/flashcards/flashcards/gen/tableItems.json')
     // const oData = await this.$axios('/static/flashcards/gen/tableItems.json')
     // debugger
-   alert(JSON.stringify(await oData.json()))
+   // alert(JSON.stringify(await oData.json()))
+    this.$options.graphItems = await oData.json();
+    console.log("graphItems",this.$options.graphItems);
   },
   computed: {
     // ...mapGetters(["pageTitle"]),
@@ -146,6 +148,12 @@ export default {
       return this.graphItems[0].aOut
     },
     graphItems() {
+      // return graphItems;
+      //best way would be to cache this with a computed
+      if(!this.$fetchState.pending){
+        return this.$options.graphItems;
+      }
+
       return graphItems;
     },
   },
