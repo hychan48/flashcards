@@ -1,26 +1,9 @@
 <template>
 <v-container fluid
 >
-  <v-fab-transition>
-    <v-btn
-      v-show="false"
-      absolute
-      bottom
-      color="pink"
-      dark
-      fab
-      notes="fab is circular"
-      right
-      vshow="!hidden"
-    >
-      <!--      <v-icon>mdi-plus</v-icon>-->
-      {{ showButton }} {{ offsetTop }}
-    </v-btn>
-  </v-fab-transition>
   <v-row
-    v-for="graphItem in graphItems"
-    :key="graphItem"
-    v-scroll="onScroll"
+    v-for="tableItem in tableItems"
+    :key="tableItem.chartTitle"
   >
 
 
@@ -29,14 +12,14 @@
     <!--  />-->
     <!--    <pre>{{graphItems}}</pre>-->
     <v-col>
-      <div>{{ graphItem.chartTitle }}</div>
+      <div>{{ tableItem.chartTitle }}</div>
       <v-expansion-panels
         focusable
         multiple
 
       >
         <v-expansion-panel
-          v-for="(item,i) in graphItem.aOut"
+          v-for="(item,i) in tableItem.aOut"
           :key="i"
         >
           <v-expansion-panel-header>
@@ -64,39 +47,14 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-col>
-
-
-    <info-card
-      v-if="1===12"
-      v-for="row in json"
-      :key="row.i"
-      :value="row"
-
-    />
-
-    <!--    can be lazy and just use expansion bar...-->
-    <!--    let's try the index thing-->
-    <!--    <h1>sup</h1>-->
-    <div
-      v-for="section in graphItems"
-      v-if="1===12"
-      id="i"
-      :key="section.chartTitle"
-    >
-      <div class="text-h1">{{ section.chartTitle }}</div>
-      <pre>{{ section.aOut }}</pre>
-      <!--      {{section}}-->
-    </div>
-
-
   </v-row>
-<!--  <pre>{{json}}</pre>-->
 </v-container>
 </template>
 <script>
 import {mapMutations} from "vuex";
 //json generated from another project
 import graphItems from "static/flashcards/gen/graphItems.json"
+import tableItems from "static/flashcards/gen/tableItems.json"
 import styleMixin from "~/assets/styleMixin";
 
 // https://vuetifyjs.com/en/directives/scroll/#usage
@@ -132,6 +90,9 @@ export default {
     },
     graphItems() {
       return graphItems;
+    },
+    tableItems(){
+      return tableItems;
     },
   },
   methods: {

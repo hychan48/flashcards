@@ -19,7 +19,7 @@
   </v-fab-transition>
   <v-row
     v-for="graphItem in graphItems"
-    :key="graphItem"
+    :key="graphItem.chartTitle"
     v-scroll="onScroll"
   >
 
