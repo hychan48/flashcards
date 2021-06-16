@@ -44,7 +44,7 @@
 import {mapMutations} from "vuex";
 import styleMixin from "~/assets/styleMixin";
 //json generated from another project
-import tableItems from "static/flashcards/gen/tableItems.json"
+// import tableItems from "static/flashcards/gen/tableItems.json"
 // const tableItems = [];
 
 // https://vuetifyjs.com/en/directives/scroll/#usage
@@ -67,7 +67,12 @@ export const scrollingMixin = {
 export default {
   name: 'tableItemsPage',
   mixins: [styleMixin, scrollingMixin],
-  tableItems,
+  // tableItems,
+  async fetch() {
+    const oData = await fetch(process.env.baseUrl + 'flashcards/static/tableItems.json');
+    this.$options.tableItems = await oData.json();
+    // console.log("graphItems", this.$options.graphItems);
+  },
   data() {
     return {
       // multiples: []
@@ -76,6 +81,7 @@ export default {
   computed: {
 
     tableItems() {
+      this.$fetchState.pending;
       return this.$options.tableItems;
     },
   },
