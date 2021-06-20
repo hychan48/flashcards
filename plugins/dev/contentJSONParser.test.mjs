@@ -73,6 +73,7 @@ describe('Parse JSON5 $Content', function(){
     );
 
     // console.log(rows[0]);
+    fs.writeFileSync("content/tableItemsJSON5.json5",JSON.stringify(rows));
 
 
 
