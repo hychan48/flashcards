@@ -3,15 +3,15 @@
 >
 
   <div
-    v-show="false"
+    v-if="false"
     notes="<%=NODE_ENV%>"
     dev-notes="vue stuff dont work"
     >notes
   </div>
 <!--  Pending: {{this.$fetchState.pending}}-->
-  <v-fab-transition>
+  <v-fab-transition v-if="false">
     <v-btn
-      v-show="false"
+      v-if="false"
       absolute
       bottom
       color="pink"
@@ -30,17 +30,11 @@
     :key="graphItem.chartTitle"
     v-scroll="onScroll"
   >
-
-
-    <!--  <info-card-->
-    <!--    :value="json[0]"-->
-    <!--  />-->
-    <!--    <pre>{{graphItems}}</pre>-->
     <v-col>
       <div>{{ graphItem.chartTitle }}</div>
       <v-expansion-panels
         focusable
-        multiple
+        multiplessss
 
       >
         <v-expansion-panel
