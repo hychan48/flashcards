@@ -48,25 +48,26 @@ import styleMixin from "~/assets/styleMixin";
 // const tableItems = [];
 
 // https://vuetifyjs.com/en/directives/scroll/#usage
-export const scrollingMixin = {
-  data: () => ({
-    offsetTop: 0,
-  }),
-  computed: {
-    showButton() {
-      return this.offsetTop > 0;
-    }
-  },
-  methods: {
-    onScroll(e) {
-      this.offsetTop = e.target.scrollTop
-    },
-  },
-}
+// export const scrollingMixin = {
+//   data: () => ({
+//     offsetTop: 0,
+//   }),
+//   computed: {
+//     showButton() {
+//       return this.offsetTop > 0;
+//     }
+//   },
+//   methods: {
+//     onScroll(e) {
+//       this.offsetTop = e.target.scrollTop
+//     },
+//   },
+// }
 export default {
 
   name: 'tableItemsPage',
-  mixins: [styleMixin, scrollingMixin],
+  mixins: [styleMixin],
+  // mixins: [styleMixin, scrollingMixin],
   // tableItems,
 
   /**
