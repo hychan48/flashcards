@@ -1,3 +1,6 @@
 # ignore layout foo.vue
 *dev/*
 *.test*
+
+# Ignore flashcard static files - doesnt build.. so actually doesnt get ignored
+static/flashcards/*
