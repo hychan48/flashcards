@@ -1,7 +1,9 @@
 <template>
 <v-container fluid
 >
-  <div v-for="author of content" :key="author.slug">
+<!--  <nuxt-content :document="content"/>-->
+  <div
+    v-for="(author,i) of content" :key="i">
     <pre>{{author}}</pre>
 
   </div>
@@ -67,10 +69,29 @@ export const scrollingMixin = {
     },
   },
 }
+/* overly complicated workaround */
+const devHotReload = {
 
+
+};
+if (process.env.NODE_ENV === 'development') {
+  devHotReload.plugins = [
+    function ({ store }) {
+    console.log('this work?');
+      // Only in development
+        window.onNuxtReady(($nuxt) => {
+          $nuxt.$on('content:update', ({ event, path }) => {
+            // Refresh the store categories
+            store.dispatch('fetchCategories')
+          })
+        })
+    }
+  ]
+}
 export default {
+
   name: 'tableItemsPage',
-  mixins: [styleMixin, scrollingMixin],
+  mixins: [styleMixin, scrollingMixin,devHotReload],
   // tableItems,
 
   /**
@@ -83,8 +104,9 @@ export default {
     // debugger
     // const content = await $content('tableItems',{deep:true,}).limit(10).fetch()
     // const content = await $content('tableItems',{deep:true,}).limit(10).fetch()
+    // const content = await $content('tableItems').fetch()
     // const content = await $content('hello').fetch()
-    const content = await $content('tableItemsJSON5').fetch()
+    const content = await $content(`tableItemsJSON5#${Date.now()}`).fetch()
       .catch(err => {
       console.error(err);
       error({ statusCode: 404, message: "Page not found" });

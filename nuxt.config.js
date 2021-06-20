@@ -20,6 +20,15 @@ const env = {
 /* setup env */
 env.baseUrl = env.BASE_URL + env.ROUTER_BASE
 
+
+/* Dev plugins */
+const plugins = [];
+if (process.env.NODE_ENV === 'development') {
+  plugins.push('plugins/dev/contentHotReload.js');
+}
+
+
+
 export default {
   env,
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -63,11 +72,11 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins,
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  // components: true,
+  components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -83,7 +92,9 @@ export default {
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: {
+    liveEdit: process.env.NODE_ENV === 'development' ? true : false,
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
