@@ -128,32 +128,42 @@ export default {
   },
   //testing better way
   graphItems: [],//options
-  async fetch() {
-    // alert(process.env.BASE_URL)
-    // const router = this.$router;
-    // debugger
-    // const oData = await fetch('/flashcards/flashcards/gen/tableItems.json');// todo append the path / baseurl
-    // const oData = await fetch(process.env.baseUrl + 'flashcards/gen/tableItems.json');// todo append the path / baseurl
-    // console.log(('fetch options', this.$options.graphItems));
-    // const oData = await fetch(process.env.baseUrl + 'flashcards/gen/graphItems.json');// todo append the path / baseurl
-    const oData = await fetch(process.env.baseUrl + 'flashcards/static/graphItems.json');// todo append the path / baseurl
-    // const oData = await fetch('http://localhost:3000/flashcards/flashcards/gen/tableItems.json')
-    // const oData = await this.$axios('/static/flashcards/gen/tableItems.json')
-    // debugger
-    // alert(JSON.stringify(await oData.json()))
-    this.$options.graphItems = await oData.json();
-    // console.log("graphItems", this.$options.graphItems);
+  async asyncData(ctx) {
+    const {$content,error} = ctx;
+    const aContent = await $content('graphItems').fetch()
+      .catch(err => {
+        console.error(err);
+        error({ statusCode: 404, message: "Page not found" });
+      });
+    return {aContent};
   },
+  // async fetch() {
+  //   // alert(process.env.BASE_URL)
+  //   // const router = this.$router;
+  //   // debugger
+  //   // const oData = await fetch('/flashcards/flashcards/gen/tableItems.json');// todo append the path / baseurl
+  //   // const oData = await fetch(process.env.baseUrl + 'flashcards/gen/tableItems.json');// todo append the path / baseurl
+  //   // console.log(('fetch options', this.$options.graphItems));
+  //   // const oData = await fetch(process.env.baseUrl + 'flashcards/gen/graphItems.json');// todo append the path / baseurl
+  //   const oData = await fetch(process.env.baseUrl + 'flashcards/static/graphItems.json');// todo append the path / baseurl
+  //   // const oData = await fetch('http://localhost:3000/flashcards/flashcards/gen/tableItems.json')
+  //   // const oData = await this.$axios('/static/flashcards/gen/tableItems.json')
+  //   // debugger
+  //   // alert(JSON.stringify(await oData.json()))
+  //   this.$options.graphItems = await oData.json();
+  //   // console.log("graphItems", this.$options.graphItems);
+  // },
   computed: {
     // ...mapGetters(["pageTitle"]),
-    json() {
-      // return data;
-      return this.graphItems[0].aOut
-    },
+    // json() {
+    //   // return data;
+    //   return this.graphItems[0].aOut
+    // },
     graphItems() {
+      return this.aContent;
       //testing this logic for performance
-      this.$fetchState.pending;
-      return this.$options.graphItems;
+      // this.$fetchState.pending;
+      // return this.$options.graphItems;
       // if(!this.$options.graphItems){
       //   return this.$options.graphItems;
       // }else if(!this.$fetchState.pending){
