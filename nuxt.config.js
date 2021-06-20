@@ -28,7 +28,14 @@ if (process.env.NODE_ENV !== 'production') {
   // plugins.push('plugins/dev/contentHotReload.client.js');
   watch.push('content/tableItemsJSON5.json5')
 }
+/* debugging content json parser */
+//file is a string
+function parseJSONContentFile(file){
 
+  debugger
+
+  return [];
+}
 
 
 export default {
@@ -97,6 +104,12 @@ export default {
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
     liveEdit: process.env.NODE_ENV === 'development' ? true : false,
+    //json array doesnt work? debug
+
+    extendParser: {
+      '.json5': parseJSONContentFile
+    },
+
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
