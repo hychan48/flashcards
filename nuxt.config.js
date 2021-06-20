@@ -25,7 +25,7 @@ const plugins = [];
 const watch = [];
 if (process.env.NODE_ENV !== 'production') {
   console.log('plugin loaded');
-  plugins.push('plugins/dev/contentHotReload.client.js');
+  // plugins.push('plugins/dev/contentHotReload.client.js');
   watch.push('content/tableItemsJSON5.json5')
 }
 
