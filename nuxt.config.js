@@ -137,7 +137,7 @@ export default {
     //json array doesnt work? debug
 
     extendParser: {
-      // '.json5': parseJSONContentFile
+      '.jsonCONTENT': parseJSONContentFile
     },
 
   },
