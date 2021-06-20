@@ -4,7 +4,9 @@ export default function ({ store }) {
   window.onNuxtReady(($nuxt) => {
     $nuxt.$on('content:update', ({ event, path }) => {
       // Refresh the store categories
-      store.dispatch('fetchCategories')
+      // store.dispatch('fetchCategories')
+      // debugger
+      $nuxt.refresh();
     })
   })
 };

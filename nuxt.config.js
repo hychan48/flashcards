@@ -16,20 +16,23 @@ const env = {
   //Will be populated
   // baseUrl:undefined,
 }
-
 /* setup env */
 env.baseUrl = env.BASE_URL + env.ROUTER_BASE
 
 
 /* Dev plugins */
 const plugins = [];
-if (process.env.NODE_ENV === 'development') {
-  plugins.push('plugins/dev/contentHotReload.js');
+const watch = [];
+if (process.env.NODE_ENV !== 'production') {
+  console.log('plugin loaded');
+  plugins.push('plugins/dev/contentHotReload.client.js');
+  watch.push('content/tableItemsJSON5.json5')
 }
 
 
 
 export default {
+  watch,
   env,
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,

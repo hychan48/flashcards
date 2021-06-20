@@ -69,29 +69,10 @@ export const scrollingMixin = {
     },
   },
 }
-/* overly complicated workaround */
-const devHotReload = {
-
-
-};
-if (process.env.NODE_ENV === 'development') {
-  devHotReload.plugins = [
-    function ({ store }) {
-    console.log('this work?');
-      // Only in development
-        window.onNuxtReady(($nuxt) => {
-          $nuxt.$on('content:update', ({ event, path }) => {
-            // Refresh the store categories
-            store.dispatch('fetchCategories')
-          })
-        })
-    }
-  ]
-}
 export default {
 
   name: 'tableItemsPage',
-  mixins: [styleMixin, scrollingMixin,devHotReload],
+  mixins: [styleMixin, scrollingMixin],
   // tableItems,
 
   /**
