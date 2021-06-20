@@ -1,6 +1,9 @@
 <template>
 <v-container fluid
 >
+  <nuxt-content
+    :document="content"
+  />
   <v-row
     v-for="tableItem in tableItems"
     :key="tableItem.chartTitle"
@@ -68,21 +71,47 @@ export default {
   name: 'tableItemsPage',
   mixins: [styleMixin, scrollingMixin],
   // tableItems,
-  async fetch() {
-    const oData = await fetch(process.env.baseUrl + 'flashcards/static/tableItems.json');
-    this.$options.tableItems = await oData.json();
-    // console.log("graphItems", this.$options.graphItems);
+
+  /**
+   * https://github.com/nuxt/content/tree/dev/example/content
+   * https://github.com/nuxt/content/blob/dev/example/pages/articles/_slug.vue
+   * for using content for import
+   */
+  async asyncData(ctx) {
+    const {$content,error} = ctx;
+    // debugger
+    // const content = await $content('tableItems',{deep:true,}).limit(10).fetch()
+    // const content = await $content('tableItems',{deep:true,}).limit(10).fetch()
+    // const content = await $content('hello').fetch()
+    const content = await $content('tableItemsJSON5').fetch()
+      .catch(err => {
+      console.error(err);
+      error({ statusCode: 404, message: "Page not found" });
+    });
+    // console.log(content);
+    console.log('content.length: ', content.length);
+    return {content};
+
+
   },
+  // async fetch() {
+  //   const oData = await fetch(process.env.baseUrl + 'flashcards/static/tableItems.json');
+  //   this.$options.tableItems = await oData.json();
+  //   // console.log("graphItems", this.$options.graphItems);
+  // },
   data() {
     return {
       // multiples: []
+      content:undefined,
     }
   },
   computed: {
 
     tableItems() {
-      this.$fetchState.pending;
-      return this.$options.tableItems;
+
+      return this.content;
+      // this.$fetchState.pending;
+      // return this.$options.tableItems;
     },
   },
   methods: {
