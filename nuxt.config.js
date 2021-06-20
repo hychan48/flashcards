@@ -186,6 +186,25 @@ export default {
         // }
       }
     },
+
+    /* still pretty big.. maybe try: + html-minifier maybe...?
+    *  https://github.com/NMFR/optimize-css-assets-webpack-plugin
+    * */
+    // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-build#extractcss
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue|scss)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
+    },
+
     //
   }
 }
