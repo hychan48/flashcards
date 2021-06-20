@@ -52,12 +52,24 @@ describe('Parse JSON5 $Content', function(){
 
 
     const rows = JSON.parse(file);
+
     assert.strictEqual(
       paramCase(
-      // 'Respiratory Physiology Graphs'
-        rows[1].chartTitle
+        'Respiratory Physiology Graphs'
       ),
       'respiratory-physiology-graphs'
+    );
+    rows.forEach(val =>{
+      val.slug = val.slug = paramCase(val.chartTitle);
+    });
+
+    assert.strictEqual(
+      paramCase(
+        // 'Respiratory Physiology Graphs'
+        rows[1].chartTitle
+      ),
+      // 'respiratory-physiology-graphs'
+      rows[1].slug
     );
 
     // console.log(rows[0]);
