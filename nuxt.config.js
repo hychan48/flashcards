@@ -31,10 +31,40 @@ if (process.env.NODE_ENV !== 'production') {
 /* debugging content json parser */
 //file is a string
 function parseJSONContentFile(file){
+  const demo = [
+    {
+      "name": "Sébastien Chopin",
+      "slug": "atinux",
+      "dir": "/authors",
+      "path": "/authors/atinux",
+      "extension": ".json5"
+    },
+    {
+      "name": "Krutie Patel",
+      "slug": "krutiepatel",
+      "dir": "/authors",
+      "path": "/authors/krutiepatel",
+      "extension": ".json5"
+    },
+    {
+      "name": "Sergey Bedritsky",
+      "slug": "sergeybedritsky",
+      "dir": "/authors",
+      "path": "/authors/sergeybedritsky",
+      "extension": ".json5"
+    }
+  ];
+try{
+  const aOut = JSON.parse(file);
+  return demo;
+  // return aOut;
+  // return aOut;
+}catch (e) {
+  return demo;
+}
 
-  debugger
 
-  return [];
+
 }
 
 
