@@ -62,7 +62,11 @@ class GenToContentsTest {
 }
 /** main */
 describe('Generator JSON to $content file to be used', function(){
-  const filePaths = ["static/flashcards/static/graphItems.json"];
+  const filePaths = [
+    "static/flashcards/static/graphItems.json",
+    "static/flashcards/static/tableItems.json",
+
+  ];
   const GRAPH_ITEM = filePaths[0];
   const gtct = new GenToContentsTest()
 
@@ -80,6 +84,10 @@ describe('Generator JSON to $content file to be used', function(){
   });
 
   it('exportFileIntoContents', function(){
-    gtct.exportFileIntoContents(GRAPH_ITEM)
+    filePaths.forEach(file =>{
+      // gtct.exportFileIntoContents(GRAPH_ITEM)
+      gtct.exportFileIntoContents(file)
+    })
+
   });
 });

@@ -1,16 +1,6 @@
 <template>
 <v-container fluid
 >
-<!--  <nuxt-content :document="content"/>-->
-  <a
-    href="http://localhost:3000/_content/tableItemsJSON5"
-    target="_blank"
-  >http://localhost:3000/_content/tableItemsJSON5</a>
-  <div
-    v-for="(author,i) of content" :key="i">
-    <pre>{{author}}</pre>
-
-  </div>
   <v-row
     v-for="tableItem in tableItems"
     :key="tableItem.chartTitle"
@@ -86,20 +76,14 @@ export default {
    */
   async asyncData(ctx) {
     const {$content,error} = ctx;
-    // debugger
-    // const content = await $content('tableItems',{deep:true,}).limit(10).fetch()
-    const content = await $content('tableItemsJSON5',{deep:true,}).limit(1).fetch()
-    // const content = await $content('tableItems',{deep:true,}).limit(10).fetch()
-    // const content = await $content('tableItems').fetch()
-    // const content = await $content('hello').fetch()
-    // const content = await $content(`tableItemsJSON5#${Date.now()}`).fetch()
+    const aContent = await $content('tableItems').fetch()
       .catch(err => {
       console.error(err);
       error({ statusCode: 404, message: "Page not found" });
     });
     // console.log(content);
-    console.log('content.length: ', content.length);
-    return {content};
+    // console.log('content.length: ', content.length);
+    return {aContent};
 
 
   },
@@ -111,14 +95,14 @@ export default {
   data() {
     return {
       // multiples: []
-      content:undefined,
+      aContent:[],
     }
   },
   computed: {
 
     tableItems() {
 
-      return this.content;
+      return this.aContent;
       // this.$fetchState.pending;
       // return this.$options.tableItems;
     },
