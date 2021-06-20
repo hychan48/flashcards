@@ -31,31 +31,40 @@ const path = require('path');
  */
 class GenToContentsTest {
   //why is this even a class?
-  constructor(filePathIn,slugKey='chartTitle',filePathDir='content/') {
-    this.filePathIn = filePathIn;
+  constructor(slugKey='chartTitle',filePathDir='content/') {
+    // this.filePathIn = filePathIn;
     this.slugKey = slugKey;
     this.filePathDir = filePathDir;
   }
 
   /**
    * Creates files
+   * 1. gen folder to minified json and slug
+   *
+   *
    */
-  main(){
+  exportFileIntoContents(filePathIn){
     // can optimize to stream later
-    const inFile = fs.readFileSync(this.filePathIn);
+    const rows = JSON.parse(fs.readFileSync(filePathIn));
+    const filename = GenToContentsTest.getFilename(filePathIn)
+
+    rows.forEach(val =>{
+      val.slug = val.slug = paramCase(val[this.slugKey]);
+    });
 
 
-
-    fs.writeFileSync("content/tableItemsJSON5.json5",JSON.stringify(rows));
+    fs.writeFileSync(this.filePathDir + filename,JSON.stringify(rows));
   }
 
-  get filename(){
-    return path.parse(this.filePathIn).base;
+  static getFilename(filepath){
+    return path.parse(filepath).base;
   }
 }
 /** main */
 describe('Generator JSON to $content file to be used', function(){
-  const gtct = new GenToContentsTest("static/flashcards/static/graphItems.json")
+  const filePaths = ["static/flashcards/static/graphItems.json"];
+  const GRAPH_ITEM = filePaths[0];
+  const gtct = new GenToContentsTest()
 
   /**
    * + {
@@ -67,7 +76,10 @@ describe('Generator JSON to $content file to be used', function(){
 + }
    */
   it('getFileName', function(){
-    assert.strictEqual(gtct.filename,'graphItems.json');//require assert
+    assert.strictEqual(GenToContentsTest.getFilename(GRAPH_ITEM),'graphItems.json');//require assert
+  });
 
+  it('exportFileIntoContents', function(){
+    gtct.exportFileIntoContents(GRAPH_ITEM)
   });
 });
