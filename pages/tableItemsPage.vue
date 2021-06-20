@@ -1,9 +1,10 @@
 <template>
 <v-container fluid
 >
-  <nuxt-content
-    :document="content"
-  />
+  <div v-for="author of content" :key="author.slug">
+    <pre>{{author}}</pre>
+
+  </div>
   <v-row
     v-for="tableItem in tableItems"
     :key="tableItem.chartTitle"
