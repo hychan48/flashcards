@@ -42,15 +42,25 @@ this.timeout(500);//500ms
 
  */
 const fs = require('fs');
+import {paramCase} from 'change-case' ;//kebab case
 describe('Parse JSON5 $Content', function(){
-  it('parseJSONContentFile - strip aOut', function(){
+  it('parseJSONContentFile - add slug', function(){
     //assert.strictEqual(1,1);//require assert
-    const file = fs.readFileSync("content/graphItemShortWorks.json5").toString();
+    // const file = fs.readFileSync("content/graphItemShortWorks.json5").toString();
+    const file = fs.readFileSync("static/flashcards/static/graphItems.json").toString();
     assert.strictEqual(typeof file,'string');
 
 
-    const aOut = JSON.parse(file);
-    console.log(aOut[0]);
+    const rows = JSON.parse(file);
+    assert.strictEqual(
+      paramCase(
+      // 'Respiratory Physiology Graphs'
+        rows[1].chartTitle
+      ),
+      'respiratory-physiology-graphs'
+    );
+
+    // console.log(rows[0]);
 
 
 
