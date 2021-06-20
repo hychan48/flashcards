@@ -37,6 +37,9 @@ this.timeout(500);//500ms
   zero namespacing for this
 
   my guess is it didnt generate a proper slug
+
+  It only supports array when a slug is defined
+
  */
 const fs = require('fs');
 describe('Parse JSON5 $Content', function(){
