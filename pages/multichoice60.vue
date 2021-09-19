@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col notes="Multi Choice 60">
+    <v-col notes="Multi Choice 60" cols="8">
       <v-card
         hover
       >
@@ -18,6 +18,24 @@
       </span>
         </v-card-title>
         <v-card-text>
+<!--          <pre>{{devFiveEntries}}</pre>-->
+          <div
+            v-for="(entry,i) in devFiveEntries"
+            :key="entry.question + i"
+            :ref="entry.question + i"
+          >
+<!--            {{entry.question + i}}-->
+            {{entry.question}}
+            <v-radio-group v-model="radioGroups[i]">
+              <v-radio
+                v-for="(answer,n) in entry.answers"
+                :key="n + answer"
+                :label="`${answer}`"
+                :value="n"
+              ></v-radio>
+            </v-radio-group>
+          </div>
+          <hr/>
           <pre>{{radioGroup}}</pre>
 <!--          <pre>question: {{devFirstEntry.question}}</pre>-->
           <pre>{{devFirstEntry.question}}</pre>
@@ -32,6 +50,35 @@
 
 
         </v-card-text>
+      </v-card>
+    </v-col>
+    <v-col notes="Nav Demo" cols="4">
+      <v-card
+        hover
+      >
+
+        <v-card-title notes="Nav Demo"
+
+        >
+          <v-icon
+            left
+          >
+            mdi-bell-ring
+          </v-icon>
+          <span class="title font-weight-light">
+            Nav Demo
+          </span>
+        </v-card-title>
+        <v-card-text>
+          <pre>todo make absolute</pre>
+          <pre>{{radioGroups}}</pre>
+          <v-btn
+            @click="navToQuestion('leo4')"
+          >
+            dev navToQuestion leo4
+          </v-btn>
+        </v-card-text>
+
       </v-card>
     </v-col>
   </v-row>
@@ -69,6 +116,8 @@ export default {
   // },
   created() {
     this.$options.aLoremObject60 = aLoremObject60;
+    // this.radioGroups = new Array(aLoremObject60.length);//production
+    this.radioGroups = new Array(this.devFiveEntries.length + 1);//lazy dev way
   },
   computed: {
     /**
@@ -76,11 +125,49 @@ export default {
      */
     devFirstEntry() {
       return this.$options.aLoremObject60?.[0]
-    }
+    },
+    devFiveEntries() {
+      return this.$options.aLoremObject60?.slice(0,5);
+    },
+
+    /**
+     * Should convert right and wrong. maybe also add key generated for refs
+     *
+     */
+    cRadioGroups(){
+
+    },
   },
   data() {
     return {
       radioGroup: {},//let's see
+      radioGroups: [],//size initialized on crete
+    }
+  },
+  methods: {
+    /**
+     * https://vuetifyjs.com/en/features/scrolling/#use-with-router
+     :ref="entry.question + i"
+     Lorem0
+     * @param ref
+     */
+    navToQuestion(ref) {
+      // debugger
+      // this.$vuetify.goTo(this.$refs[ref]);
+      // this.$vuetify.goTo(this.$refs['leo4']);
+      // this.$vuetify.goTo('#leo4');
+      try{
+        // console.log(typeof this.$refs.leo4);
+        // console.log(this.$refs.leo4[0]);
+        // this.$vuetify.goTo(this.$refs.leo4[0]);//since when? cuz it's a div?
+        this.$vuetify.goTo(this.$refs[ref][0]);
+      }catch (e){
+        console.error(e);
+
+      }
+
+
+
     }
   },
 
