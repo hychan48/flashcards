@@ -28,8 +28,9 @@
 
         >
 <!--          <pre>{{devFiveEntries}}</pre>-->
+<!--          <pre>{{aQuestionSets}}</pre>-->
           <div
-            v-for="(entry,i) in devFiveEntries"
+            v-for="(entry,i) in aQuestionSets"
             :key="entry.question + i"
             :ref="entry.question + i"
             :id="entry.question + i"
@@ -87,6 +88,7 @@
         <v-card-text>
           <pre>todo make absolute</pre>
           <pre>{{radioGroups}}</pre>
+          <pre>{{questionSetStates}}</pre>
           <pre>offsetTop: {{offsetTop}}</pre>
           <a
             href="http://localhost:3000/multichoice60#leo4"
@@ -145,7 +147,7 @@ export default {
   created() {
     this.$options.aLoremObject60 = aLoremObject60;
     // this.radioGroups = new Array(aLoremObject60.length);//production
-    this.radioGroups = new Array(this.devFiveEntries.length + 1);//lazy dev way
+    this.radioGroups = new Array(this.aQuestionSets.length + 1);//lazy dev way
   },
   /*
    Must be missing a directive or something... this seems wrong
@@ -168,12 +170,33 @@ export default {
     devFiveEntries() {
       return this.$options.aLoremObject60?.slice(0,5);
     },
+    aQuestionSets(){
+      // return this.aLoremObject60;
+      return this.devFiveEntries;
+    },
 
     /**
      * Should convert right and wrong. maybe also add key generated for refs
+     * interesting..
      *
+     * so if null.. not answered i guess?
      */
-    cRadioGroups(){
+    questionSetStates(){
+      const lookupTable = [];
+      console.log('computed... what');
+      const tmp = this.aQuestionSets.map((row,i) =>{
+
+        const {question,answers,iAnswer} = row;
+
+        return {
+          id:question+i,//should make it a method or somethign
+          // color:this.radioGroups[i]this.radioGroups[i] === iAnswer,//
+        }
+
+      });
+
+      console.log(tmp);
+      return tmp;
 
     },
   },
