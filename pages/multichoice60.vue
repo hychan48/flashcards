@@ -1,8 +1,14 @@
 <template>
-  <v-row>
-    <v-col notes="Multi Choice 60" cols="8">
+  <v-row
+    v-scroll.self="onScroll"
+    class="overflow-y-auto"
+  >
+    <v-col notes="Multi Choice 60" cols="8"
+    >
       <v-card
         hover
+
+
       >
 
         <v-card-title notes="Multi Choice 60"
@@ -17,13 +23,18 @@
         Multi Choice 60
       </span>
         </v-card-title>
-        <v-card-text>
+        <v-card-text
+
+
+        >
 <!--          <pre>{{devFiveEntries}}</pre>-->
-          <div
+          <v-row
             v-for="(entry,i) in devFiveEntries"
             :key="entry.question + i"
             :ref="entry.question + i"
             :id="entry.question + i"
+
+
           >
 <!--            {{entry.question + i}}-->
             {{entry.question}}
@@ -35,7 +46,7 @@
                 :value="n"
               ></v-radio>
             </v-radio-group>
-          </div>
+          </v-row>
           <hr/>
           <pre>{{radioGroup}}</pre>
 <!--          <pre>question: {{devFirstEntry.question}}</pre>-->
@@ -53,9 +64,12 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col notes="Nav Demo" cols="4">
+    <v-col notes="Nav Demo" cols="4" sssclass="float-right">
       <v-card
         hover
+        ssclass="float-right"
+
+
       >
 
         <v-card-title notes="Nav Demo"
@@ -73,6 +87,7 @@
         <v-card-text>
           <pre>todo make absolute</pre>
           <pre>{{radioGroups}}</pre>
+          <pre>offsetTop: {{offsetTop}}</pre>
           <a
             href="http://localhost:3000/multichoice60#leo4"
             target="_blank"
@@ -166,6 +181,9 @@ export default {
     return {
       radioGroup: {},//let's see
       radioGroups: [],//size initialized on crete
+
+      //scroll
+      offsetTop:0,
     }
   },
   methods: {
@@ -204,6 +222,22 @@ export default {
       console.log(this.$route.hash);
 
     },
+
+    /**
+     * scroll directive?
+     * https://vuetifyjs.com/en/directives/scroll/#usage
+     * update anchor / hash while scrolling pass
+     *
+     * fix later... giving up now
+     */
+
+    onScroll(e){
+      console.log('scroll',e);
+      debugger
+      this.offsetTop = e.target.scrollTop
+
+
+    }
   },
 
 }
