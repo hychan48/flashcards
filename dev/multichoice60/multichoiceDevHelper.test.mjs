@@ -93,7 +93,7 @@ describe('State Test for answers', function(){
     //assert.strictEqual(1,1);//require assert
     const inputs = [null,0,1];
 
-    //pesky 0 --./. meh
+    //pesky 0 --./. meh dont already kinda hard to make a unit test without fixing my paths
 
 
   });

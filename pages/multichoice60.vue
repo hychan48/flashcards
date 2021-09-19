@@ -181,8 +181,7 @@ export default {
      */
     questionSetStates(){
       const lookupTable = [];
-      console.log('computed... what');
-      const tmp = this.aQuestionSets.map((row,i) =>{
+      const aOut = this.aQuestionSets.map((row,i) =>{
 
         const {question,answers,iAnswer} = row;
         const iGivenAnswer = this.radioGroups[i];
@@ -194,16 +193,20 @@ export default {
           //color to be populated
           // color:iGivenAnswer === iAnswer ? 'success' : 'error'
         }
-        //pesky 0
-        if(iGivenAnswer !== null){
+        //pesky 0 - annoying type i guess example here
+        console.log('type of ',typeof iGivenAnswer);
+        if(typeof(iGivenAnswer) != 'undefined' && iGivenAnswer != null){
           tmp.color = iGivenAnswer === iAnswer ? 'success' : 'error';
+          tmp.colorMdiIcon = iGivenAnswer === iAnswer ? 'mdi-check-bold' : 'mdi-close';
+
         }
+        console.log(iGivenAnswer,tmp);
         return tmp;
 
       });
 
-      console.log(tmp);
-      return tmp;
+
+      return aOut;
 
     },
   },
