@@ -83,10 +83,18 @@ describe('Gen Lorem 60 * (5 + 1)', function(){
 
 /**
  * Import path issues.. so copy pasta
+ * null is nuetral
+ * success
+ * and error
+ *
  */
 describe('State Test for answers', function(){
   it('Color for right wrong null', function(){
     //assert.strictEqual(1,1);//require assert
+    const inputs = [null,0,1];
+
+    //pesky 0 --./. meh
+
 
   });
 

@@ -34,8 +34,6 @@
             :key="entry.question + i"
             :ref="entry.question + i"
             :id="entry.question + i"
-
-
           >
 <!--            {{entry.question + i}}-->
             {{entry.question}}
@@ -187,11 +185,20 @@ export default {
       const tmp = this.aQuestionSets.map((row,i) =>{
 
         const {question,answers,iAnswer} = row;
+        const iGivenAnswer = this.radioGroups[i];
+        const tmp = {
+          //should make it a method or somethign
+          id:question+i,
 
-        return {
-          id:question+i,//should make it a method or somethign
-          // color:this.radioGroups[i]this.radioGroups[i] === iAnswer,//
+          /* if exact success. else null stay neutral */
+          //color to be populated
+          // color:iGivenAnswer === iAnswer ? 'success' : 'error'
         }
+        //pesky 0
+        if(iGivenAnswer !== null){
+          tmp.color = iGivenAnswer === iAnswer ? 'success' : 'error';
+        }
+        return tmp;
 
       });
 
