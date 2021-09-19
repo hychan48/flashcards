@@ -23,6 +23,7 @@
             v-for="(entry,i) in devFiveEntries"
             :key="entry.question + i"
             :ref="entry.question + i"
+            :id="entry.question + i"
           >
 <!--            {{entry.question + i}}-->
             {{entry.question}}
@@ -72,6 +73,10 @@
         <v-card-text>
           <pre>todo make absolute</pre>
           <pre>{{radioGroups}}</pre>
+          <a
+            href="http://localhost:3000/multichoice60#leo4"
+            target="_blank"
+          >http://localhost:3000/multichoice60#leo4</a>
           <v-btn
             @click="navToQuestion('leo4')"
           >
@@ -149,6 +154,11 @@ export default {
      * https://vuetifyjs.com/en/features/scrolling/#use-with-router
      :ref="entry.question + i"
      Lorem0
+
+     http://localhost:3000/multichoice60#leo4
+
+     questionable hash?
+     https://vuetifyjs.com/en/features/scrolling/#use-with-router
      * @param ref
      */
     navToQuestion(ref) {
