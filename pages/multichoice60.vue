@@ -28,7 +28,7 @@
 
         >
 <!--          <pre>{{devFiveEntries}}</pre>-->
-          <v-row
+          <div
             v-for="(entry,i) in devFiveEntries"
             :key="entry.question + i"
             :ref="entry.question + i"
@@ -46,7 +46,7 @@
                 :value="n"
               ></v-radio>
             </v-radio-group>
-          </v-row>
+          </div>
           <hr/>
           <pre>{{radioGroup}}</pre>
 <!--          <pre>question: {{devFirstEntry.question}}</pre>-->
