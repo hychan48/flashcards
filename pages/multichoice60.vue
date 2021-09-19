@@ -82,6 +82,11 @@
           >
             dev navToQuestion leo4
           </v-btn>
+          <v-btn
+            @click="devSandbox"
+          >
+            devSandbox
+          </v-btn>
         </v-card-text>
 
       </v-card>
@@ -119,10 +124,24 @@ export default {
   //   console.log(oData);
   //   // this.$options.graphItems = await oData.json();
   // },
+  /**
+   * Initialize the test object.. lazy way
+   */
   created() {
     this.$options.aLoremObject60 = aLoremObject60;
     // this.radioGroups = new Array(aLoremObject60.length);//production
     this.radioGroups = new Array(this.devFiveEntries.length + 1);//lazy dev way
+  },
+  /*
+   Must be missing a directive or something... this seems wrong
+   */
+  async mounted(){
+    await this.$nextTick();
+    const {hash} = this.$route;
+    if(hash){
+      await this.$vuetify.goTo(hash);
+    }
+    // console.log(hash);
   },
   computed: {
     /**
@@ -171,6 +190,7 @@ export default {
         // console.log(this.$refs.leo4[0]);
         // this.$vuetify.goTo(this.$refs.leo4[0]);//since when? cuz it's a div?
         this.$vuetify.goTo(this.$refs[ref][0]);
+        console.log(this.$route);
       }catch (e){
         console.error(e);
 
@@ -178,7 +198,12 @@ export default {
 
 
 
-    }
+    },
+    devSandbox(){
+      console.log(this.$route);
+      console.log(this.$route.hash);
+
+    },
   },
 
 }
