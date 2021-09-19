@@ -18,7 +18,19 @@
       </span>
         </v-card-title>
         <v-card-text>
-          <pre>{{$options.aLoremObject60}}</pre>
+          <pre>{{radioGroup}}</pre>
+<!--          <pre>question: {{devFirstEntry.question}}</pre>-->
+          <pre>{{devFirstEntry.question}}</pre>
+          <v-radio-group v-model="radioGroup">
+            <v-radio
+              v-for="(answer,n) in devFirstEntry.answers"
+              :key="n + answer"
+              :label="`${answer}`"
+              :value="n"
+            ></v-radio>
+          </v-radio-group>
+
+
         </v-card-text>
       </v-card>
     </v-col>
@@ -28,6 +40,20 @@
 
 <script>
 import {aLoremObject60} from "static/multichoice60/lorem360words.mjs";
+
+
+/**
+ * I probably want state of sorts that would reflect the row...
+ * answered, correct, wrong
+ *
+ *
+ * Potential
+ * https://vuetifyjs.com/en/components/paginations/#usage
+ * https://vuetifyjs.com/en/components/subheaders/#menu
+ */
+const questionSetMixin = {
+
+};
 
 export default {
   name: "multichoice60",
@@ -43,7 +69,20 @@ export default {
   // },
   created() {
     this.$options.aLoremObject60 = aLoremObject60;
-  }
+  },
+  computed: {
+    /**
+     * @returns {{question: string, answers: string[], iAnswer: number}}
+     */
+    devFirstEntry() {
+      return this.$options.aLoremObject60?.[0]
+    }
+  },
+  data() {
+    return {
+      radioGroup: {},//let's see
+    }
+  },
 
 }
 </script>
