@@ -84,10 +84,26 @@
           </span>
         </v-card-title>
         <v-card-text>
-          <pre>todo make absolute</pre>
-          <pre>{{radioGroups}}</pre>
-          <pre>{{questionSetStates}}</pre>
-          <pre>offsetTop: {{offsetTop}}</pre>
+          <pre>todo make absolute / prettier</pre>
+<!--          <pre>{{radioGroups}}</pre>-->
+<!--          <pre>{{questionSetStates}}</pre>-->
+          <div
+            v-for="buttonState in questionSetStates"
+          >
+            <v-btn
+              :color="buttonState.color"
+              @click="navToQuestion(buttonState.id)"
+            >
+              {{buttonState.id}}
+              <v-icon>
+                {{buttonState.colorMdiIcon}}
+              </v-icon>
+            </v-btn>
+          </div>
+
+          <hr/>
+          <pre>offsetTop: {{offsetTop}} - hash / anchor not working..
+scroll not being triggered</pre>
           <a
             href="http://localhost:3000/multichoice60#leo4"
             target="_blank"
