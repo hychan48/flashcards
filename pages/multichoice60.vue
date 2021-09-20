@@ -122,6 +122,19 @@ scroll not being triggered</pre>
 
       </v-card>
     </v-col>
+
+<!--    scroll test inside of the page.. .maybe it should be default?-->
+    <v-btn
+      color="primary"
+      fixed
+      bottom
+      right
+
+      v-scroll="onScroll"
+    >
+      Scroll
+    </v-btn>
+
   </v-row>
 
 </template>
