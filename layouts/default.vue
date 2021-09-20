@@ -126,6 +126,11 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
+          title: 'Multichoice 60',
+          to: '/multichoice60'
+        },
+        {
+          icon: 'mdi-chart-bubble',
           title: 'Legal',
           to: '/legal'
         }
