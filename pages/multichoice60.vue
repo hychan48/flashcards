@@ -1,7 +1,8 @@
 <template>
+<!--  v-scroll.self="onScroll"-->
   <v-row
-    v-scroll.self="onScroll"
-    class="overflow-y-auto"
+    id="rowId"
+    sclass="overflow-y-auto"
   >
     <v-col notes="Multi Choice 60" cols="8"
     >
@@ -123,17 +124,45 @@ scroll not being triggered</pre>
       </v-card>
     </v-col>
 
-<!--    scroll test inside of the page.. .maybe it should be default?-->
-    <v-btn
-      color="primary"
-      fixed
-      bottom
-      right
 
-      v-scroll="onScroll"
-    >
-      Scroll
-    </v-btn>
+
+<!--    https://vuetifyjs.com/en/api/v-fab-transition/ -->
+    <v-fab-transition>
+      <v-btn
+        color="primary"
+        fixed
+        bottom
+        right
+        v-show="showFab"
+        v-scroll="onScroll"
+        @click="toTop"
+        fab
+
+        aria-label="Nav to top"
+        title="Nav to top"
+
+      >
+        <v-icon>mdi-chevron-up</v-icon>
+      </v-btn>
+    </v-fab-transition>
+
+<!--    <v-btn-->
+<!--      color="primary"-->
+<!--      fixed-->
+<!--      bottom-->
+<!--      left-->
+<!--      v-show="showFab"-->
+<!--      v-scroll="onScroll"-->
+<!--      @click="toTop"-->
+<!--      fab-->
+
+<!--      aria-label="Nav to top"-->
+<!--      title="Nav to top"-->
+<!--      key="s"-->
+
+<!--    >-->
+<!--      <v-icon>mdi-chevron-up</v-icon>-->
+<!--    </v-btn>-->
 
   </v-row>
 
@@ -188,6 +217,11 @@ export default {
     // console.log(hash);
   },
   computed: {
+    //todo refactor the scroll button
+    showFab(){
+      return this.offsetTop > 0;
+
+    },
     /**
      * @returns {{question: string, answers: string[], iAnswer: number}}
      */
@@ -293,12 +327,22 @@ export default {
      */
 
     onScroll(e){
-      console.log('scroll',e);
-      debugger
-      this.offsetTop = e.target.scrollTop
+      // console.log('scroll',e);
+      // debugger
+      // this.offsetTop = e.target.scrollTop
+      if(process.client){
+        this.offsetTop = window.scrollY;
+      }
 
 
-    }
+    //  window.scrollY
+
+
+
+    },
+    toTop(e){
+      this.$vuetify.goTo(0);
+    },
   },
 
 }
