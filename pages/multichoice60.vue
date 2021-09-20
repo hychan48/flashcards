@@ -185,8 +185,8 @@ export default {
       return this.$options.aLoremObject60?.slice(0,5);
     },
     aQuestionSets(){
-      // return this.aLoremObject60;
-      return this.devFiveEntries;
+      return this.$options.aLoremObject60;
+      // return this.devFiveEntries;
     },
 
     /**
@@ -196,7 +196,6 @@ export default {
      * so if null.. not answered i guess?
      */
     questionSetStates(){
-      const lookupTable = [];
       const aOut = this.aQuestionSets.map((row,i) =>{
 
         const {question,answers,iAnswer} = row;
@@ -210,13 +209,13 @@ export default {
           // color:iGivenAnswer === iAnswer ? 'success' : 'error'
         }
         //pesky 0 - annoying type i guess example here
-        console.log('type of ',typeof iGivenAnswer);
+        // console.log('type of ',typeof iGivenAnswer);
         if(typeof(iGivenAnswer) != 'undefined' && iGivenAnswer != null){
           tmp.color = iGivenAnswer === iAnswer ? 'success' : 'error';
           tmp.colorMdiIcon = iGivenAnswer === iAnswer ? 'mdi-check-bold' : 'mdi-close';
 
         }
-        console.log(iGivenAnswer,tmp);
+        // console.log(iGivenAnswer,tmp);
         return tmp;
 
       });
