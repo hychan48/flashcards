@@ -131,6 +131,11 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
+          title: 'MC60 Paginated',
+          to: '/multichoice60_paginated'
+        },
+        {
+          icon: 'mdi-chart-bubble',
           title: 'Legal',
           to: '/legal'
         }
