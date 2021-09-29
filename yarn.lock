@@ -7482,10 +7482,10 @@ npm-user-validate@*:
   resolved "https://registry.yarnpkg.com/npm-user-validate/-/npm-user-validate-1.0.1.tgz#31428fc5475fe8416023f178c0ab47935ad8c561"
   integrity sha512-uQwcd/tY+h1jnEaze6cdX/LrhWhoBxfSknxentoqmIuStxUExxjWd3ULMLFPiFUrZKbOVMowH6Jq2FRWfmhcEw==
 
-npm@7.24.0:
-  version "7.24.0"
-  resolved "https://registry.yarnpkg.com/npm/-/npm-7.24.0.tgz#566e883aff916ea5665c0a034ec17e286a1ace14"
-  integrity sha512-4zd4txmN7dYEx32kH/K+gecnZhnGDdCrRFK6/n5TGUtqtyjevw0uPul0knJ9PzwDXeNf9MsWzGhjxGeI1M43FA==
+npm@7.24.1:
+  version "7.24.1"
+  resolved "https://registry.yarnpkg.com/npm/-/npm-7.24.1.tgz#4d23670f46c828e88f6b853497d2a896e8fac41b"
+  integrity sha512-U7/C++ZgB3zNH/kzhSJMnp3pO2iLrZRGUUXAgCCLB/by+sR+dKVhP/ik9+sTOGk9wk3zbmwHAYDT8igkv1ss0g==
   dependencies:
     "@npmcli/arborist" "*"
     "@npmcli/ci-detect" "*"
@@ -11453,10 +11453,10 @@ yargs@16.2.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-yarn-audit-fix@^7.0.4:
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/yarn-audit-fix/-/yarn-audit-fix-7.0.4.tgz#00b24818ca83cd405e58171854e1e33a4bd1263f"
-  integrity sha512-+I2cpVM5p8mfZ8S80K3wmpUgSNU23RvCXcQQQqlciTnj1kil9yOOZYfq8fNTJT3/Bs9VDmAO8ySDOYBYIgu/Aw==
+yarn-audit-fix@^7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/yarn-audit-fix/-/yarn-audit-fix-7.0.5.tgz#57e8deb04839fdcab4609648fdb37a453104f9e9"
+  integrity sha512-ReGbd576b26QU0gKS4bKN/T9rvwdhSijGo4eTcYhJowK9YG8NqHxifatFiTZyONmPyHbXpLTPTnNR8rP9mPyvQ==
   dependencies:
     "@types/find-cache-dir" "^3.2.1"
     "@types/fs-extra" "^9.0.12"
@@ -11471,7 +11471,7 @@ yarn-audit-fix@^7.0.4:
     fs-extra "^10.0.0"
     globby "^12.0.2"
     lodash-es "^4.17.21"
-    npm "7.24.0"
+    npm "7.24.1"
     pkg-dir "^5.0.0"
     semver "^7.3.5"
     synp "^1.9.7"
