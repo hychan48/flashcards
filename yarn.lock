@@ -913,6 +913,11 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"
   integrity sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==
 
+"@isaacs/string-locale-compare@*":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
+  integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
+
 "@lokidb/full-text-search@^2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@lokidb/full-text-search/-/full-text-search-2.1.0.tgz#5f0b36dc0d67ba365f84663a9c0438537c186a76"
@@ -1706,10 +1711,10 @@
   resolved "https://registry.yarnpkg.com/@types/find-cache-dir/-/find-cache-dir-3.2.1.tgz#7b959a4b9643a1e6a1a5fe49032693cc36773501"
   integrity sha512-frsJrz2t/CeGifcu/6uRo4b+SzAwT4NYCVPu1GN8IB9XTzrpPkGuV0tmh9mN+/L0PklAlsC3u5Fxt0ju00LXIw==
 
-"@types/fs-extra@^9.0.12":
-  version "9.0.12"
-  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.12.tgz#9b8f27973df8a7a3920e8461517ebf8a7d4fdfaf"
-  integrity sha512-I+bsBr67CurCGnSenZZ7v94gd3tc3+Aj2taxMT4yu4ABLuOgOjeFxX3dokG24ztSRg5tnT00sL8BszO7gSMoIw==
+"@types/fs-extra@^9.0.13":
+  version "9.0.13"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.13.tgz#7594fbae04fe7f1918ce8b3d213f74ff44ac1f45"
+  integrity sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==
   dependencies:
     "@types/node" "*"
 
@@ -4654,7 +4659,7 @@ find-cache-dir@^3.0.0, find-cache-dir@^3.3.1, find-cache-dir@^3.3.2:
     make-dir "^3.0.2"
     pkg-dir "^4.1.0"
 
-find-up@5.0.0, find-up@^5.0.0:
+find-up@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-5.0.0.tgz#4c92819ecb7083561e4f4a240a86be5198f536fc"
   integrity sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==
@@ -4677,10 +4682,10 @@ find-up@^4.0.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
-find-up@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/find-up/-/find-up-6.0.0.tgz#7e321c34ecfea17dfffc4d78017bb025b9dfff71"
-  integrity sha512-NU20P/qRR4fbjbfQgf5SL6L7AbQbUG69OmBJ3o+DEmHwSwKaaeZ+9ok/zuE5Z8pyFSGPerTen16gLZTs1v1zjQ==
+find-up@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/find-up/-/find-up-6.1.0.tgz#96009919bff6cfba2bad6ceb5520c26082ecf370"
+  integrity sha512-aBlseiBgQ1RSiF/brMW+toDud3NHJ2Hn3pgNJLmBf2+gBwwNbfhE/Lbg2wwwoHfD3qXReOvDH4hlywQCXp4/Lw==
   dependencies:
     locate-path "^7.0.0"
     path-exists "^5.0.0"
@@ -7482,11 +7487,12 @@ npm-user-validate@*:
   resolved "https://registry.yarnpkg.com/npm-user-validate/-/npm-user-validate-1.0.1.tgz#31428fc5475fe8416023f178c0ab47935ad8c561"
   integrity sha512-uQwcd/tY+h1jnEaze6cdX/LrhWhoBxfSknxentoqmIuStxUExxjWd3ULMLFPiFUrZKbOVMowH6Jq2FRWfmhcEw==
 
-npm@7.24.0:
-  version "7.24.0"
-  resolved "https://registry.yarnpkg.com/npm/-/npm-7.24.0.tgz#566e883aff916ea5665c0a034ec17e286a1ace14"
-  integrity sha512-4zd4txmN7dYEx32kH/K+gecnZhnGDdCrRFK6/n5TGUtqtyjevw0uPul0knJ9PzwDXeNf9MsWzGhjxGeI1M43FA==
+npm@7.24.2:
+  version "7.24.2"
+  resolved "https://registry.yarnpkg.com/npm/-/npm-7.24.2.tgz#861117af8241bea592289f22407230e5300e59ca"
+  integrity sha512-120p116CE8VMMZ+hk8IAb1inCPk4Dj3VZw29/n2g6UI77urJKVYb7FZUDW8hY+EBnfsjI/2yrobBgFyzo7YpVQ==
   dependencies:
+    "@isaacs/string-locale-compare" "*"
     "@npmcli/arborist" "*"
     "@npmcli/ci-detect" "*"
     "@npmcli/config" "*"
@@ -8182,12 +8188,12 @@ pkg-dir@^4.1.0:
   dependencies:
     find-up "^4.0.0"
 
-pkg-dir@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-5.0.0.tgz#a02d6aebe6ba133a928f74aec20bafdfe6b8e760"
-  integrity sha512-NPE8TDbzl/3YQYY7CSS228s3g2ollTFnc+Qi3tqmqJp9Vg2ovUpixcJEo2HJScN2Ez+kEaal6y70c0ehqJBJeA==
+pkg-dir@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-6.0.0.tgz#f78318fe7bd9f1b2915402d6b9e0b90ab45daa8d"
+  integrity sha512-x5JKouPc1VcyhD6MI5OvxjQQ2UhKVFzs6tg0wWnEszRTLdoZwh3f8aVxogsG5HXJ9eloRUzmxSdxVtGHYTyW5A==
   dependencies:
-    find-up "^5.0.0"
+    find-up "^6.1.0"
 
 pnp-webpack-plugin@^1.6.4:
   version "1.6.4"
@@ -11453,13 +11459,13 @@ yargs@16.2.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-yarn-audit-fix@^7.0.4:
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/yarn-audit-fix/-/yarn-audit-fix-7.0.4.tgz#00b24818ca83cd405e58171854e1e33a4bd1263f"
-  integrity sha512-+I2cpVM5p8mfZ8S80K3wmpUgSNU23RvCXcQQQqlciTnj1kil9yOOZYfq8fNTJT3/Bs9VDmAO8ySDOYBYIgu/Aw==
+yarn-audit-fix@^7.0.8:
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/yarn-audit-fix/-/yarn-audit-fix-7.0.8.tgz#456cc49d9f8730a444f38ef0624ecca89f4bdd77"
+  integrity sha512-wQ434fmbdaXvOIegNhWN1JWL08ogU1CO0p57UE8JmzN3PQnaDJTbnfrLAbTSTwm9Tt7ptcwIb21Us/0UYB0M/Q==
   dependencies:
     "@types/find-cache-dir" "^3.2.1"
-    "@types/fs-extra" "^9.0.12"
+    "@types/fs-extra" "^9.0.13"
     "@types/lodash-es" "^4.17.5"
     "@types/semver" "^7.3.8"
     "@types/yarnpkg__lockfile" "^1.1.5"
@@ -11467,12 +11473,12 @@ yarn-audit-fix@^7.0.4:
     chalk "^4.1.2"
     commander "^8.2.0"
     find-cache-dir "^3.3.2"
-    find-up "^6.0.0"
+    find-up "^6.1.0"
     fs-extra "^10.0.0"
     globby "^12.0.2"
     lodash-es "^4.17.21"
-    npm "7.24.0"
-    pkg-dir "^5.0.0"
+    npm "7.24.2"
+    pkg-dir "^6.0.0"
     semver "^7.3.5"
     synp "^1.9.7"
     tslib "^2.3.1"
