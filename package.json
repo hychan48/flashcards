@@ -21,7 +21,7 @@
     "package.json": "^2.0.1"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.11.3",
+    "@nuxtjs/vuetify": "^1.12.3",
     "change-case": "^4.1.2",
     "cross-env": "^7.0.3",
     "esm": "^3.2.25",
